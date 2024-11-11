@@ -150,7 +150,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
         { hid: 'description', name: 'description', content: 'Helmet Pro provides Helmet Cleaning Vending Machines for efficient helmet hygiene, offering rental, automatic dispenser, and superior cleaning solutions.' },// SEO description
-        { name: 'publisher', content: 'HelmetPro Solutions Helmet Cleaning Vending Machine' }, // Publisher meta tag
+        { name: 'publisher', content: 'HelmetPro Solutions Helmet Cleaning Vending Machine - Tj@y-D3V' }, // Publisher meta tag
         { hid: 'keywords', name: 'keywords', content: 'HelmetPro, Helmet Cleaning Vending Machine, Helmet Cleaning Vendo Machine, Helmet Cleaning Service, Helmet Pro, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
         { hid: 'og:title', property: 'og:title', content: 'HelmetPro' }, // Open Graph title
         { hid: 'og:description', property: 'og:description', content: 'Discover the Future of Helmet Cleaning!' }, // Open Graph description
