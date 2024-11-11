@@ -342,7 +342,7 @@
     <section > 
       <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap ">
       <!-- Glass card effect with vibrant gradient, enhanced blur and shadow -->
-      <div class="bg-gradient-to-r from-blue-500 to-teal-700 bg-opacity-70 rounded-xl shadow-2xl backdrop-blur-lg p-12 ">
+      <div class="bg-gradient-to-r from-blue-500 to-teal-700 bg-opacity-70 rounded-xl shadow-2xl backdrop-blur-lg p-5 lg:p-12 ">
         <div class="relative z-10">
           <!-- Headline with bold font and glowing text effect -->
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 animate__animated animate__fadeInUp 

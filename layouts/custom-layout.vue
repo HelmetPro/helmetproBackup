@@ -46,32 +46,32 @@
           <div class="hidden md:flex space-x-8">
             <NuxtLink
               to="/"
-              class="text-white hover:text-gray-200 transition duration-300"
+              class="nav-link"
               >Home</NuxtLink
             >
             <NuxtLink
               to="/product"
-              class="text-white hover:text-gray-200 transition duration-300"
+              class="nav-link"
               >Product</NuxtLink
             >
             <NuxtLink
               to="/about"
-              class="text-white hover:text-gray-200 transition duration-300"
+              class="nav-link"
               >About Us</NuxtLink
             >
             <NuxtLink
               to="/our-service"
-              class="text-white hover:text-gray-200 transition duration-300"
+              class="nav-link"
               >Our Service</NuxtLink
             >
             <NuxtLink
               to="/contactus"
-              class="text-white hover:text-gray-200 transition duration-300"
+              class="nav-link"
               >Contact Us</NuxtLink
             >
             <NuxtLink
               to="/partnership"
-              class="text-white hover:text-gray-200 transition duration-300"
+              class="nav-link"
               >Join Us</NuxtLink
             >
             
@@ -81,7 +81,7 @@
                 <!-- Button with Arrow -->
                 <button 
                   @click="toggleBlogDropdown"
-                  class="text-white hover:text-gray-200  flex items-center"
+                  class="text-white hover:text-gray-200  flex items-center nav-link"
                   aria-expanded="isBlogDropdownOpen"
                 >
                   Learn More
@@ -108,9 +108,9 @@
                   class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg z-10 transition-opacity duration-200 opacity-0 group-hover:opacity-100 group-hover:visible"
                 >
                   <ul>
-                    <li><NuxtLink to="/computation" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Computation</NuxtLink></li>
-                    <li><NuxtLink to="/how-it-works" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">How it Works</NuxtLink></li>
-                    <li><NuxtLink to="/faqs" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQ's</NuxtLink></li>
+                    <li><NuxtLink to="/computation" class="dropdown-link">Computation</NuxtLink></li>
+                    <li><NuxtLink to="/how-it-works" class="dropdown-link">How it Works</NuxtLink></li>
+                    <li><NuxtLink to="/faqs" class="dropdown-link">FAQ's</NuxtLink></li>
 
                   </ul>
                 </div>
@@ -210,7 +210,7 @@
     <!-- Quick Links Section -->
     <div class="flex flex-col mb-6 md:mb-0">
       <h2 class="text-lg font-bold text-white mb-4">Quick Links</h2>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-20 lg:gap-4">
         <ul class="space-y-2">
           <li>
             <NuxtLink to="/" @click="toggleMenu" class="link-item font-semibold">Home</NuxtLink>
@@ -244,11 +244,11 @@
     </div>
 
     <!-- Follow Us Section -->
-    <div class="flex flex-col mb-6 md:mb-0">
+    <div class="lg:flex  lg:flex-col mb-6 md:mb-0">
       <h2 class="text-lg font-bold text-white mb-2">Follow Us</h2>
       <ul class="space-y-2">
         <li class="flex items-center">
-          <i class="fab fa-facebook-square text-3xl text-blue-700 mr-2"></i>
+          <i class="fab fa-facebook-square text-3xl text-blue-100 lg:text-blue-700 mr-2"></i>
           <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class="link-item font-semibold text-white">Facebook</a>
         </li>
         <li class="flex items-center">
@@ -256,7 +256,7 @@
           <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="link-item font-semibold text-white">Instagram</a>
         </li>
         <li class="flex items-center">
-          <i class="fab fa-facebook-messenger text-3xl text-blue-700 mr-1"></i>
+          <i class="fab fa-facebook-messenger text-3xl text-blue-100 lg:text-blue-700 mr-1"></i>
           <a href="https://m.me/helmetprosolutions" target="_blank" class="link-item font-semibold text-white">Messenger</a>
         </li>
       </ul>
@@ -334,6 +334,43 @@ onUnmounted(() => {
   position: relative;
   padding: 1rem;
 }
+
+.nav-link {
+  position: relative;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+  color: #d6d6d6;
+  transform: translateY(-3px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d6d6d6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #1e40af;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-link:hover {
+  color: #ffffff;
+  background-color: #3b82f6;
+}
+
 
 @media (max-width: 1024px) {
   .custom-bg-image {
