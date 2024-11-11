@@ -164,7 +164,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
-        { rel: 'icon', type: 'image/x-icon', href: 'https://utfs.io/f/txXKmXW6aEb8aDiPwDQUWzYPrEl1Q67p4My3VRAmtdnsgINv' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '512x512', href: 'https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP' },
         { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://utfs.io/f/txXKmXW6aEb8DQ3KV0OuG9Dzxf6lRLThEngZBO1secyJSd4I' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://utfs.io/f/txXKmXW6aEb8jDF6T4cQseLHMGdXzShEm9I4Ub51Rgqy687T' },
