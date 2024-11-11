@@ -72,9 +72,32 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
+useHead({
+  title: 'Join HelmetPro: Revolutionizing Helmet Hygiene',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'partnership'
+        ? 'Discover the exciting partnership opportunities with HelmetPro and how you can join us in transforming helmet hygiene solutions.'
+        : 'Learn how you can become a part of HelmetPro’s journey in revolutionizing helmet hygiene with innovative vending machines.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'HelmetPro,Helmet Cleaning vending machine partnership opportunities,Helmet Cleaning Reseller, helmet cleaning business, join helmetpro, helmet hygiene solutions, automated helmet cleaning, vending machine partnership' 
+    }
+  ],
+})
+
+
 definePageMeta({
   layout: 'custom-layout',
   name: 'JOIN US',
+  title: 'Join HelmetPro: Revolutionizing Helmet Hygiene',
   head: {
     middleware: 'canonical',
 

@@ -60,12 +60,29 @@ const images = [
   'https://utfs.io/f/txXKmXW6aEb8xddFqhmrlgFz0uoShVUIp6njet8vPdMTDywf'
 ]
 const selectedImage = ref(images[0])
+import { useRoute } from 'vue-router'
+const route = useRoute()
 
+useHead({
+  title: 'We Customize Your Helmet Cleaning Machine',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'customize'
+        ? 'Explore customization options for Helmet Cleaning Machines with a personalized design style, tailored to meet your specific needs.'
+        : 'Learn how HelmetPro offers tailored solutions to make your helmet cleaning machine unique and functional.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'HelmetPro, customize helmet cleaning machine, custom helmet vending machine, personalized helmet cleaning, helmet hygiene, maintenance solution, automated cleaning' 
+    }
+  ],
+})
 definePageMeta({
   layout: 'custom-layout',
   name: 'Our Service',
-  title: 'We Customize Your Helmet Cleaning Machine',
-  description: 'Explore customization options for Helmet Cleaning Machines with a personalized design style.',
   middleware: 'canonical',
 })
 </script>

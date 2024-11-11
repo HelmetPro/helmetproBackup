@@ -3,9 +3,31 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
+useHead({
+  title: 'FAQs | HelmetPro: Helmet Cleaning Vending Solutions',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'faqs'
+        ? 'Find answers to frequently asked questions about HelmetPro’s helmet cleaning vending machines, our services, and technology.'
+        : 'Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'HelmetPro, helmet cleaning FAQ, helmet cleaning FAQ, vending machines, FAQ, helmet hygiene FAQ, convenience, automated vending machine FAQ' 
+    }
+  ],
+})
+
 definePageMeta({
   layout: 'custom-layout',
   name: 'FAQS',
+  title: 'FAQs | HelmetPro: Helmet Cleaning Vending Solutions',
   head: {
     middleware: 'canonical',
     script: [

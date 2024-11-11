@@ -288,15 +288,32 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router';
+const route = useRoute();
+useHead({
+  title: 'HelmetPro Product: Our Helmet Cleaning Vending Machine',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'product'
+        ? 'The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time.'
+        : 'Discover the innovative helmet cleaning solution from HelmetPro, offering high-tech vending machines for effective helmet sanitation.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' 
+    }
+  ],
+})
+
 definePageMeta({
   layout: 'custom-layout',
   name: 'PRODUCT',
+  title: 'HelmetPro: Helmet Cleaning Vending Machine',
   head: {
     middleware: 'canonical',
-    meta: [
-      { hid: 'description', name: 'description', content: 'The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time.' },
-      { hid: 'keywords', name: 'keywords', content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' }
-    ],
     script: [
       {
         type: 'application/ld+json',

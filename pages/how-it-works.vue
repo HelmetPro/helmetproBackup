@@ -62,7 +62,26 @@
 
 <script setup>
 import { onMounted, onUnmounted } from 'vue';
+import { useRoute } from 'vue-router'
+const route = useRoute()
 
+useHead({
+  title: 'How HelmetPro Helmet Cleaning Vending Machines Works',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'how-it-works'
+        ? 'Discover how HelmetPro’s automated helmet cleaning vending machines provide a convenient, hygienic solution for helmet maintenance.'
+        : 'Learn more about how our innovative helmet cleaning vending machines work and benefit your customers.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'HelmetPro, how HelmetPro works, How helmet cleaning works, How helmet vending machine works,How automated helmet cleaning works, helmet hygiene, maintenance solution, convenience' 
+    }
+  ],
+})
 // Define page metadata
 definePageMeta({
   layout: 'custom-layout',
