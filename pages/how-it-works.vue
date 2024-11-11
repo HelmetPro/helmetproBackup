@@ -68,17 +68,13 @@ definePageMeta({
   layout: 'custom-layout',
   name: 'How it Works',
   head: {
+    middleware: 'canonical',
     link: [
     {
       rel: 'preload',
       href: 'https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo',
       as: 'video'
     },
-    {
-      hid: 'canonical',
-      rel: 'canonical',
-      href: 'https://www.helmetprosolutions.com/how-it-works'
-    }
   ],
     script: [
       {

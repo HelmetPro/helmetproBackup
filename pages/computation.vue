@@ -11,13 +11,7 @@ definePageMeta({
   layout: 'custom-layout',
   name: 'POTENTIAL INCOME',
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: 'https://www.helmetprosolutions.com/computation'
-      }
-    ],
+    middleware: 'canonical',
     script: [
       {
         type: 'application/ld+json',

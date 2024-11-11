@@ -9,13 +9,7 @@ definePageMeta({
   layout: 'custom-layout',
   name: 'ABOUT',
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: 'https://www.helmetprosolutions.com/about'
-      }
-    ],
+    middleware: 'canonical',
     meta: [
       { hid: 'description', name: 'description', content: 'Discover HelmetPro and our commitment to revolutionizing helmet hygiene with our advanced vending machines that offer convenience and cleanliness.' },
       { hid: 'keywords', name: 'keywords', content: 'HelmetPro, helmet hygiene, vending solutions, innovative cleaning, convenience, hygiene machines' }

@@ -76,13 +76,7 @@ definePageMeta({
   layout: 'custom-layout',
   name: 'JOIN US',
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-       href: 'https://www.helmetprosolutions.com/partnership'
-      }
-    ],
+    middleware: 'canonical',
 
     script: [
       {

@@ -7,13 +7,7 @@ definePageMeta({
   layout: 'custom-layout',
   name: 'FAQS',
   head: {
-    link: [
-    {
-      hid: 'canonical',
-      rel: 'canonical',
-      href: 'https://www.helmetprosolutions.com/faqs'
-    }
-  ],
+    middleware: 'canonical',
     script: [
       {
         type: 'application/ld+json',

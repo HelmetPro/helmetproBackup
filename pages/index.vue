@@ -1,4 +1,5 @@
 <template>
+  
   <div>
     <ProductHero  />
     <ProductAbout />
@@ -11,13 +12,7 @@
 <script setup>
 definePageMeta({
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: 'https://www.helmetprosolutions.com/'
-      }
-    ],
+    middleware: 'canonical',
     meta: [
       {
         hid: 'description',
