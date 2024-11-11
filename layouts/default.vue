@@ -35,9 +35,9 @@
     <!-- Navigation Bar -->
     <section>
       <nav
-        :class="['absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-400 to-teal-400 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
+        :class="['absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-700 to-teal-500 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
       >
-        <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
+        <div class=" mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
             <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8l1xnnMTULFAz3OGEhrT62oYjiBmM5ebJtvDp" alt="Logo" class="h-12 md:h-16" loading="lazy" />
@@ -121,12 +121,12 @@
                   v-show="isBlogDropdownOpen" 
                   @mouseenter="isBlogDropdownOpen = true"
                   @mouseleave="isBlogDropdownOpen = false"
-                  class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg z-10 transition-opacity duration-200 opacity-0 group-hover:opacity-100 group-hover:visible"
+                  class="absolute right-0 mt-2 w-48 bg-white text-blue-800 rounded-lg shadow-lg z-10 transition-opacity duration-200 opacity-0 group-hover:opacity-100 group-hover:visible"
                 >
                   <ul>
-                    <li><NuxtLink to="/computation" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Computation</NuxtLink></li>
-                    <li><NuxtLink to="/how-it-works" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">How it Works</NuxtLink></li>
-                    <li><NuxtLink to="/faqs" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQ's</NuxtLink></li>
+                    <li><NuxtLink to="/computation" class="block px-4 py-2 hover:text-white hover:bg-blue-500">Computation</NuxtLink></li>
+                    <li><NuxtLink to="/how-it-works" class="block px-4 py-2 hover:text-white hover:bg-blue-500">How it Works</NuxtLink></li>
+                    <li><NuxtLink to="/faqs" class="block px-4 py-2 hover:text-white hover:bg-blue-500">FAQ's</NuxtLink></li>
                   </ul>
                 </div>
               </div>
@@ -197,62 +197,63 @@
     </div>
 
 <!-- Footer Section -->
-<footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-6 md:p-8 text-gray-800">
+<footer class="bg-gradient-to-r from-blue-700 to-teal-500  p-6 md:p-8 text-gray-800">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
     
     <!-- Logo Section -->
-    <div class="flex items-center mb-6 md:mb-0">
-      <NuxtImg src="https://utfs.io/f/txXKmXW6aEb81WtnRa2tpNoBzsFYHn4jrO0gE6hbRq2wIcaT" alt="Logo" class="h-20 md:h-[230px] mr-4" loading="lazy"/>
+    <div class="flex items-center flex-col mb-6 md:mb-0">
+      <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8l1xnnMTULFAz3OGEhrT62oYjiBmM5ebJtvDp" alt="Logo" class="h-20 md:h-[120px] mr-4 mt-5" loading="lazy"/>
+      <p class="text-white">&copy; {{ new Date().getFullYear() }} HELMETPRO. All rights reserved.</p>
     </div>
 
     <!-- Contact Section -->
     <div class="flex flex-col mb-6 md:mb-0">
-      <h2 class="text-lg font-bold text-indigo-700 mb-2">Contact Us</h2>
+      <h2 class="text-lg font-bold text-white mb-2">Contact Us</h2>
       <p class="mb-1 flex items-center py-2">
-        <i class="fas fa-envelope text-indigo-600 text-2xl mr-2"></i>
-        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500 pl-4 ">partnerships@helmetprosolutions.com</a>
+        <i class="fas fa-envelope text-white text-2xl mr-2"></i>
+        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-white hover:text-white pl-4 ">partnerships@helmetprosolutions.com</a>
       </p>
       <p class="flex items-center py-2">
-        <i class="fas fa-phone text-indigo-600 text-2xl mr-2"></i>
-        <span class="font-medium text-indigo-600 pl-4">+63-962-753-3915</span>
+        <i class="fas fa-phone text-white text-2xl mr-2"></i>
+        <span class="font-medium text-white pl-4">+63-962-753-3915</span>
       </p>
       <p class="flex items-center py-2">
-        <i class="fas fa-map-marker-alt text-indigo-600 text-4xl mb-2"></i>
-        <span class="font-medium text-indigo-600 pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Spring Vile Molino 3 Bacoor</NuxtLink></span>
+        <i class="fas fa-map-marker-alt text-white text-4xl mb-2"></i>
+        <span class="font-medium text-white pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Spring Vile Molino 3 Bacoor</NuxtLink></span>
       </p>
     </div>
 
     <!-- Quick Links Section -->
     <div class="flex flex-col mb-6 md:mb-0">
-      <h2 class="text-lg font-bold text-indigo-700 mb-4">Quick Links</h2>
+      <h2 class="text-lg font-bold text-white mb-4">Quick Links</h2>
       <div class="grid grid-cols-2 gap-4">
-        <ul class="space-y-2 ">
+        <ul class="space-y-2">
           <li>
-            <NuxtLink to="/" @click="toggleMenu" class="link-item text-indigo-700 font-bold">Home</NuxtLink>
+            <NuxtLink to="/" @click="toggleMenu" class="link-item font-semibold">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/product" @click="toggleMenu" class="link-item text-indigo-700 font-bold">Product</NuxtLink>
+            <NuxtLink to="/product" @click="toggleMenu" class="link-item font-semibold">Product</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about" @click="toggleMenu" class="link-item text-indigo-700 font-bold">About Us</NuxtLink>
+            <NuxtLink to="/about" @click="toggleMenu" class="link-item font-semibold">About Us</NuxtLink>
           </li>
+          
           <li>
-            <NuxtLink to="/Computation" @click="toggleMenu" class="link-item text-indigo-700 font-bold">Computation</NuxtLink>
+            <NuxtLink to="/Computation" @click="toggleMenu" class="link-item font-semibold">Computation</NuxtLink>
           </li>
-
         </ul>
         <ul class="space-y-2">
           <li>
-            <NuxtLink to="/how-it-works" @click="toggleMenu" class="link-item text-indigo-700 font-bold">How it Works</NuxtLink>
+            <NuxtLink to="/how-it-works" @click="toggleMenu" class="link-item font-semibold">How it works</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/contactUs" @click="toggleMenu" class="link-item text-indigo-700 font-bold">Contact Us</NuxtLink>
+            <NuxtLink to="/contactUs" @click="toggleMenu" class="link-item font-semibold">Contact Us</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/partnership" @click="toggleMenu" class="link-item text-indigo-700 font-bold">Join Us</NuxtLink>
+            <NuxtLink to="/partnership" @click="toggleMenu" class="link-item font-semibold">Join Us</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/faqs" @click="toggleMenu" class="link-item text-indigo-700 font-bold">FAQ's</NuxtLink>
+            <NuxtLink to="/faqs" @click="toggleMenu" class="link-item font-semibold">FAQ's</NuxtLink>
           </li>
         </ul>
       </div>
@@ -260,27 +261,24 @@
 
     <!-- Follow Us Section -->
     <div class="flex flex-col mb-6 md:mb-0">
-      <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
+      <h2 class="text-lg font-bold text-white mb-2">Follow Us</h2>
       <ul class="space-y-2">
         <li class="flex items-center">
-          <i class="fab fa-facebook-square text-3xl text-indigo-700 mr-2"></i>
-          <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class="link-item text-indigo-700 font-bold">Facebook</a>
+          <i class="fab fa-facebook-square text-3xl text-blue-700 mr-2"></i>
+          <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class="link-item font-semibold text-white">Facebook</a>
         </li>
         <li class="flex items-center">
           <i class="fab fa-instagram-square text-3xl text-pink-500 mr-2"></i>
-          <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="link-item text-indigo-700 font-bold">Instagram</a>
+          <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="link-item font-semibold text-white">Instagram</a>
         </li>
         <li class="flex items-center">
           <i class="fab fa-facebook-messenger text-3xl text-blue-700 mr-1"></i>
-          <a href="https://m.me/helmetprosolutions" target="_blank" class="link-item text-indigo-700 font-bold">Messenger</a>
+          <a href="https://m.me/helmetprosolutions" target="_blank" class="link-item font-semibold text-white">Messenger</a>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="text-center font-medium mt-6 text-indigo-600">
-    <p>&copy; {{ new Date().getFullYear() }} HELMETPRO. All rights reserved.</p>
-  </div>
 </footer>
 
 
@@ -404,6 +402,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  color: #ffffff;
   border-radius: 0.375rem;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
