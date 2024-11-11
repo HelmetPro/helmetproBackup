@@ -118,7 +118,7 @@ useHead({
     { 
       hid: 'keywords', 
       name: 'keywords', 
-      content: 'HelmetPro, helmet cleaning contact us, helmet cleaning service, vending machines contact us, hygiene, convenience, Helmet cleaning vending machine support, ' 
+      content: 'HelmetPro Support, helmet cleaning contact us, helmet cleaning service, vending machines contact us, hygiene, convenience, Helmet cleaning vending machine support, ' 
     }
   ],
 })

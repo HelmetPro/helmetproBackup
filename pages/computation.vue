@@ -19,6 +19,11 @@ useHead({
         ? 'Calculate the potential income you can earn from HelmetPro’s automated helmet cleaning vending machines, based on different usage rates (90-100%, 50%, 25%).'
         : 'HelmetPro Calculate the potential income you can earn from automated helmet cleaning vending machines.',
     },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' 
+    }
   ],
 })
 definePageMeta({
