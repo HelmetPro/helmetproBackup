@@ -30,17 +30,17 @@ export default defineNuxtConfig({
         priority: 1.0, 
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/machine4.png',
+            loc: 'https://www.helmetprosolutions.comhttps://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8',
             title: 'Home Image',
             caption: 'Welcome to HelmetPro'
           }
         ],
         video: [
           {
-            content_loc: 'https://www.helmetprosolutions.com/hpro.mp4',
+            content_loc: 'https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo',
             title: 'How Our Helmet Cleaning Vending Machine Works',
             description: 'This video provides a step-by-step guide on how to use the HelmetPro Cleaning Vending Machine.',
-            thumbnail_loc: 'https://www.helmetprosolutions.com/images/thumbnailvideo.png',
+            thumbnail_loc: 'https://www.helmetprosolutions.comhttps://utfs.io/f/txXKmXW6aEb8fiKC3zIsdGCOeqaMtfRhVBpQvY7UJXEm3HSj',
             duration: 10600, 
           }
         ]
@@ -52,7 +52,7 @@ export default defineNuxtConfig({
         priority: 0.8,
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/machine7.png',
+            loc: 'https://www.helmetprosolutions.comhttps://utfs.io/f/txXKmXW6aEb8jkAnbDcQseLHMGdXzShEm9I4Ub51Rgqy687T',
             title: 'About Us Image',
             caption: 'Learn more about HelmetPro'
           }
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
         priority: 0.7,
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/machine3.png',
+            loc: 'https://utfs.io/f/txXKmXW6aEb85huVut1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF',
             title: 'Product Overview',
             caption: 'Insights on helmet cleaning and maintenance'
           }
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
         priority: 0.7,
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/computation.jpg',
+            loc: 'https://www.helmetprosolutions.comhttps://utfs.io/f/txXKmXW6aEb8txXfl8W6aEb84pkeofOrBZgyztcT50XqICmH',
             title: 'Computation Image',
             caption: 'Income assumptions for HelmetPro'
           }
@@ -91,7 +91,7 @@ export default defineNuxtConfig({
         priority: 0.6,
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/machine8.png',
+            loc: 'https://utfs.io/f/txXKmXW6aEb8Zt8rQ5B50AjlLUvVGXit4FExcaJgSyRsd8Ko',
             title: 'FAQs Image',
             caption: 'Frequently Asked Questions'
           }
@@ -104,7 +104,7 @@ export default defineNuxtConfig({
         priority: 0.6,
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/contactus.jpg',
+            loc: 'https://utfs.io/f/txXKmXW6aEb8Pj7gjV6lR1PiHk73G6S29LbdaweDFNOmjcBz',
             title: 'Contact Us Image',
             caption: 'Get in touch with HelmetPro'
           }
@@ -117,7 +117,7 @@ export default defineNuxtConfig({
         priority: 0.7,
         img: [
           {
-            loc: 'https://www.helmetprosolutions.com/images/partnership.jpg',
+            loc: 'https://utfs.io/f/txXKmXW6aEb8oVlrcJPsTc3VaUluMngjBrm6XEJwQ5PI9bxZ',
             title: 'Partnership Image',
             caption: 'Join us for partnership opportunities'
           }
@@ -154,7 +154,7 @@ export default defineNuxtConfig({
         { hid: 'keywords', name: 'keywords', content: 'HelmetPro, Helmet Cleaning Vending Machine, Helmet Cleaning Vendo Machine, Helmet Cleaning Service, Helmet Pro, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
         { hid: 'og:title', property: 'og:title', content: 'HelmetPro' }, // Open Graph title
         { hid: 'og:description', property: 'og:description', content: 'Discover the Future of Helmet Cleaning!' }, // Open Graph description
-        { hid: 'og:image', property: 'og:image', content: 'https://www.helmetprosolutions.com/images/logo4og.png' }, // Open Graph image
+        { hid: 'og:image', property: 'og:image', content: 'https://utfs.io/f/txXKmXW6aEb82U8cZjfEU1vzk5oN476tqYL8XVafsZglPhAm' }, // Open Graph image
         { hid: 'og:url', property: 'og:url', content: 'https://www.helmetprosolutions.com/' }, // Open Graph URL
         { hid: 'og:type', property: 'og:type', content: 'website' }, // Open Graph type
         { hid: 'fb:app_id', property: 'fb:app_id', content: 'YOUR_FACEBOOK_APP_ID' } // Facebook App ID
@@ -164,11 +164,11 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
-        { rel: 'icon', type: 'image/x-icon', href: 'https://www.helmetprosolutions.com/favicon/favicon.ico' },
-        { rel: 'icon', type: 'image/png', sizes: '512x512', href: 'https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png' },
-        { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://www.helmetprosolutions.com/favicon/android-chrome-192x192.png' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://www.helmetprosolutions.com/favicon/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://www.helmetprosolutions.com/favicon/favicon-16x16.png' }
+        { rel: 'icon', type: 'image/x-icon', href: 'https://utfs.io/f/txXKmXW6aEb8aDiPwDQUWzYPrEl1Q67p4My3VRAmtdnsgINv' },
+        { rel: 'icon', type: 'image/png', sizes: '512x512', href: 'https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP' },
+        { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://utfs.io/f/txXKmXW6aEb8DQ3KV0OuG9Dzxf6lRLThEngZBO1secyJSd4I' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://utfs.io/f/txXKmXW6aEb8jDF6T4cQseLHMGdXzShEm9I4Ub51Rgqy687T' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://utfs.io/f/txXKmXW6aEb8kuzuXYJRBVnzZS2J1WucE7HgeNFxQDytar5l' }
         
       ],
       script: [
@@ -178,7 +178,7 @@ export default defineNuxtConfig({
                   "@context": "https://schema.org",
                   "@type": "Organization",
                   "url": "https://www.helmetprosolutions.com",
-                  "logo": "https://www.helmetprosolutions.com/logo.png"
+                  "logo": "https://utfs.io/f/txXKmXW6aEb8GtNvJyEAIahDtJKVq2R3fcvu4n60Q1jAZ7Sk"
                 }),
               },
               {

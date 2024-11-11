@@ -11,7 +11,7 @@
       <div class="hidden lg:flex flex-col items-center justify-center py-2 lg:min-h-[80vh]">
         <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/hpro.mp4"
+            src="https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo"
             controls
             autoplay
             loop
@@ -40,7 +40,7 @@
       <div class="flex flex-col items-center justify-center">
         <div class="relative w-full h-[500px] border-2 rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/hpro.mp4"
+            src="https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo"
             controls
             autoplay
             loop
@@ -71,7 +71,7 @@ definePageMeta({
     link: [
     {
       rel: 'preload',
-      href: '/hpro.mp4',
+      href: 'https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo',
       as: 'video'
     },
     {
@@ -94,8 +94,8 @@ definePageMeta({
             "name": "How to Use the HelmetPro Cleaning Vending Machine",
             "description": "A step-by-step guide on using the HelmetPro Cleaning Vending Machine, featuring efficient helmet sanitization.",
             "thumbnailUrl": "https://www.helmetprosolutions.com/thumbnailvideo.png", // Add your thumbnail URL here
-            "contentUrl": "https://www.helmetprosolutions.com/hpro.mp4",
-            "embedUrl": "https://www.helmetprosolutions.com/hpro.mp4", // Optional: point to a watch page
+            "contentUrl": "https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo",
+            "embedUrl": "https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo", // Optional: point to a watch page
             "duration": "PT2M33S", // Example duration; update accordingly
             "uploadDate": "2024-11-05", // Update with the actual upload date
             "publisher": {
@@ -103,7 +103,7 @@ definePageMeta({
               "name": "HelmetPro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png"
+                "url": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP"
               }
             }
           }
@@ -116,7 +116,7 @@ definePageMeta({
           "@type": "Organization",
           "name": "HelmetPro",
           "url": "https://www.helmetprosolutions.com",
-          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "logo": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP",
           "description": "HelmetPro provides state-of-the-art helmet cleaning vending machines and dedicated support for business growth.",
           "sameAs": [
             "https://www.facebook.com/helmetprosolutions",

@@ -11,7 +11,7 @@
       <div class="hidden lg:flex flex-col items-center justify-center py-2 lg:min-h-[80vh]">
         <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/hpro.mp4"
+            src="https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo"
             :controls="controls"
             :autoplay="autoplay"
             :loop="loop"
@@ -38,7 +38,7 @@
       <div id="how-it-works" class="flex flex-col items-center justify-center">
         <div class="relative w-full h-[500px] border-2 rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/hpro.mp4"
+            src="https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo"
             :controls="controls"
             :autoplay="autoplay"
             :loop="loop"

@@ -96,14 +96,14 @@ import Splide from '@splidejs/splide';
 
 
 const mediaItems = [
-  { type: 'video', src: '/video.mp4', thumbnail: '/images/thumbnailvideo2.png' },
-  { type: 'image', src: '/images/machine1.png' },
-  { type: 'image', src: '/images/machine2.png' },
-  { type: 'image', src: '/images/machine3.png' },
-  { type: 'image', src: '/images/machine4.png' },
-  { type: 'image', src: '/images/machine5.png' },
-  { type: 'image', src: '/images/machine6.png' },
-  { type: 'image', src: '/images/machine7.png' },
+  { type: 'video', src: 'https://utfs.io/f/txXKmXW6aEb80UE4hWGiJSnzPheAx3bCfl8HZUOtuIq0MwL2', thumbnail: 'https://utfs.io/f/txXKmXW6aEb8BT5NYl3iE9cNeP12iT4K5g7HMkBLaZyQbJDt' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb87D39ogvNJZsh50YKV3ufoDizx26ROAtqEjcg' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb85huVut1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb8xddFqhmrlgFz0uoShVUIp6njet8vPdMTDywf' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb8c52U2ZWlm0cp329CiRFfTQoe8Iwa7rMAE5Xx' },
+  { type: 'image', src: 'https://utfs.io/f/txXKmXW6aEb8jkAnbDcQseLHMGdXzShEm9I4Ub51Rgqy687T' },
 ];
 
 // Check if the slide is active

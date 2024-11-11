@@ -23,7 +23,7 @@
       </div>
     </section>
 
-    <section class="relative bg-cover bg-center text-black py-16" style="background-image: url('/images/joinus8.jpg');">
+    <section class="relative bg-cover bg-center text-black py-16" style="background-image: url('https://utfs.io/f/txXKmXW6aEb86nueOakOJkcAUtmhrYT5Z7veHw2VjExaof0q');">
       <div class="absolute inset-0 bg-black opacity-70"></div> 
       <div class="relative z-10 text-center">
         <h1 class="text-5xl lg:text-6xl font-extrabold text-indigo-600 mb-6">Join Our Distributor Network</h1>
@@ -102,7 +102,7 @@ definePageMeta({
           "@type": "WebPage",
           "name": "HelmetPro",
           "url": "https://www.helmetprosolutions.com",
-          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "logo": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP",
           "description": "HelmetPro offers cutting-edge helmet cleaning vending machines and comprehensive business support for distributors, helping them thrive and grow.",
           "sameAs": [
             "https://www.facebook.com/helmetprosolutions",
@@ -127,29 +127,29 @@ const benefits = ref([
   {
     title: 'Comprehensive Training',
     description: 'Receive extensive training to help you succeed.',
-    icon: '/images/joinus.jpg', 
+    icon: 'https://utfs.io/f/txXKmXW6aEb85UqxBF1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF', 
   },
   {
     title: 'Marketing Support',
     description: 'Access to marketing resources and materials.',
-    icon: '/images/joinus2.jpg', 
+    icon: 'https://utfs.io/f/txXKmXW6aEb8Iahh4exKSrAUb9D5fERNjXTZunqmiy0PpVt7', 
   },
   {
     title: 'Exclusive Products',
     description: 'Be the first to offer our latest products.',
-    icon: '/images/joinus4.jpg', 
+    icon: 'https://utfs.io/f/txXKmXW6aEb8pJMj2JDtvW3s5owuSGP7qeH49crZfE08IaXK', 
   },
   {
     title: 'Flexible Hours',
     description: 'Work at your own pace and schedule.',
-    icon: '/images/joinus3.jpg', 
+    icon: 'https://utfs.io/f/txXKmXW6aEb84Rx7TUmZ0DBO2KRxnm5t3i9uyaYLbGSCeV8f', 
   },
 ]);
 
 const images = ref([
-  { src: '/images/joinus5.jpg', alt: 'Image 1 Description' },
-  { src: '/images/joinus6.jpg', alt: 'Image 2 Description' },
-  { src: '/images/joinus7.jpg', alt: 'Image 3 Description' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8bEnc2M7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR', alt: 'Image 1 Description' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8caz0TLlm0cp329CiRFfTQoe8Iwa7rMAE5Xxj', alt: 'Image 2 Description' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8OPBjiXRPI0NZWTJ5GnV8L3DehcdsgBXxuAtv', alt: 'Image 3 Description' },
 ]);
 
 const handleApply = () => {

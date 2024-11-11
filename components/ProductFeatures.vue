@@ -13,11 +13,11 @@
           @touchmove="moveTouch"
           @touchend="endTouch"
         >
-          <NuxtImg src="/images/1.png" alt="Helmet Fresh" class="w-full flex-shrink-0" loading="lazy"/>
-          <NuxtImg src="/images/2.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" loading="lazy"/>
-          <NuxtImg src="/images/3.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" loading="lazy"/>
-          <NuxtImg src="/images/4.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" loading="lazy"/>
-          <NuxtImg src="/images/5.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8gqlavkMYnryvbJlTKuU24e1hC8OwNHicfLPj" alt="Helmet Fresh" class="w-full flex-shrink-0" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8FEAdsEttnfW6FTJVZcOL5ixKq0k3E9SaDv2H" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8Qk4TSv9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv" alt="Helmet Fresh Application" class="w-full flex-shrink-0" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8GxWYL5AIahDtJKVq2R3fcvu4n60Q1jAZ7SkT" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8x4TeJVrlgFz0uoShVUIp6njet8vPdMTDywfR" alt="Helmet Fresh Application" class="w-full flex-shrink-0" loading="lazy"/>
         </div>
 
         <!-- Mobile view -->
@@ -28,11 +28,11 @@
           @touchmove="moveTouch"
           @touchend="endTouch"
         >
-          <NuxtImg src="/images/mobileview/feature2.png" alt="Helmet Fresh Detail" class="w-full" loading="lazy"/>
-          <NuxtImg src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
-          <NuxtImg src="/images/mobileview/feature4.png" alt="Helmet Fresh Detail" class="w-full" loading="lazy"/>
-          <NuxtImg src="/images/mobileview/feature5.png" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
-          <NuxtImg src="/images/mobileview/feature6.png" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8gG6dHFuMYnryvbJlTKuU24e1hC8OwNHicfLP" alt="Helmet Fresh Detail" class="w-full" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8c3bhYtlm0cp329CiRFfTQoe8Iwa7rMAE5Xxj" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8bpjOwz7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" alt="Helmet Fresh Detail" class="w-full" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8tE13NPW6aEb84pkeofOrBZgyztcT50XqICmH" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
+          <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8Af7yCgFPlv2UYGwEDixosRSVBd59ujqzIcF8" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
         </div>
 
         <!-- Slider Controls -->

@@ -3,7 +3,7 @@
     <div class="mx-auto flex items-center justify-center ">
       <!-- Desktop view -->
       <div class="lg:h-[300px] relative w-full flex">
-        <NuxtImg src="/images/partnership2.jpg" alt="Partnership" class="w-full h-auto object-cover" loading="lazy"/>
+        <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8fy1qQWIsdGCOeqaMtfRhVBpQvY7UJXEm3HSj" alt="Partnership" class="w-full h-auto object-cover" loading="lazy"/>
         
         <!-- Color Overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>

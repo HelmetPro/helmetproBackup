@@ -20,7 +20,7 @@
               
               alt="Helmet Cleaning Vending Machine" 
               class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
-              src="/images/machine1.png" 
+              src="https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" 
               loading="lazy"
             />
           </div>
@@ -28,7 +28,7 @@
           <NuxtImg 
             alt="Helmet Parameter" 
             class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
-            src="/images/machine6.png" 
+            src="https://utfs.io/f/txXKmXW6aEb8c52U2ZWlm0cp329CiRFfTQoe8Iwa7rMAE5Xx" 
             loading="lazy"
           />
           </div>
@@ -37,7 +37,7 @@
             
             alt="Rider Specifications" 
             class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
-            src="/images/machine4.png" 
+            src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" 
             loading="lazy"
           />
           
@@ -63,7 +63,7 @@
           <NuxtImg 
             alt="Our Factory: A Commitment to Quality" 
             class="h-100 w-full object-cover rounded-lg shadow-lg" 
-            src="/images/factory.png" 
+            src="https://utfs.io/f/txXKmXW6aEb8bERw2w7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" 
             loading="lazy"
           />
         </div>
@@ -98,7 +98,7 @@
           <NuxtImg 
             alt="Our Warehouse: The Backbone of Our Operations" 
             class="h-66 w-full object-cover rounded-lg shadow-lg" 
-            src="/images/warehouse.jpg" 
+            src="https://utfs.io/f/txXKmXW6aEb8KM4KtbXNn0EGXtSxRZ4WkULbiwYf3cVAOzo8" 
             loading="lazy"
           />
         </div>

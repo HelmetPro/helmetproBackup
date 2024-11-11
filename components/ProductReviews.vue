@@ -21,7 +21,7 @@
 
                     <div class="flex items-center justify-center space-x-6">
                       <!-- Larger Image -->
-                      <NuxtImg alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile.png" loading="lazy"/>
+                      <NuxtImg alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="https://utfs.io/f/txXKmXW6aEb87hPRsINJZsh50YKV3ufoDizx26ROAtqEjcgy" loading="lazy"/>
                       
                       <div class="text-left">
                         <!-- Name and Occupation -->
@@ -100,7 +100,7 @@
 
                     <div class="flex items-center justify-center space-x-6">
                       <!-- Larger Image -->
-                      <NuxtImg alt="testimonial" class="w-28 h-28  object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile2.png" loading="lazy"/>
+                      <NuxtImg alt="testimonial" class="w-28 h-28  object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="https://utfs.io/f/txXKmXW6aEb8m0D3FsKgLba2nloytNDm6SK3MIUri1BJ4RVe" loading="lazy"/>
                       
                       <div class="text-left">
                         <!-- Name and Occupation -->
@@ -179,7 +179,7 @@
 
                     <div class="flex items-center justify-center space-x-6">
                       <!-- Larger Image -->
-                      <NuxtImg alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile3.png" loading="lazy"/>
+                      <NuxtImg alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="https://utfs.io/f/txXKmXW6aEb8fXKnHMPIsdGCOeqaMtfRhVBpQvY7UJXEm3HS" loading="lazy"/>
                       
                       <div class="text-left">
                         <!-- Name and Occupation -->

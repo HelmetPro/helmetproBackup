@@ -21,7 +21,7 @@
     <!-- Custom Design Image -->
     <div class="mx-auto mb-6">
       <nuxt-img 
-        src="/images/custom-img.png" 
+        src="https://utfs.io/f/txXKmXW6aEb8XozVGca9EQr5A7M6kZeuFyciCDqzg1nIBRaP" 
         alt="Selected Custom Design" 
         class="w-full lg:h-auto 2xl:h-auto px-4 sm:px-10 object-contain rounded-lg " 
       />
@@ -53,19 +53,13 @@
 import { ref } from 'vue'
 
 const images = [
-  '/images/original.png',
-  '/images/custom-machine-1.png',
-  '/images/machine3.png',
-  '/images/machine4.png',
-  '/images/machine5.png'
+  'https://utfs.io/f/txXKmXW6aEb8WWolpsbcxwak1M5s7IrEVfey4pvngCuh36Tm',
+  'https://utfs.io/f/txXKmXW6aEb8t2Nds9W6aEb84pkeofOrBZgyztcT50XqICmH',
+  'https://utfs.io/f/txXKmXW6aEb85huVut1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF',
+  'https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8',
+  'https://utfs.io/f/txXKmXW6aEb8xddFqhmrlgFz0uoShVUIp6njet8vPdMTDywf'
 ]
 const selectedImage = ref(images[0])
-
-const rebrandingImages = [
-  '/images/brand-image-1.png',
-  '/images/brand-image-2.png',
-  '/images/brand-image-3.png'
-]
 
 definePageMeta({
   layout: 'custom-layout',
@@ -119,7 +113,7 @@ definePageMeta({
       rgba(120, 175, 253, 0.1) 11.52%,
       #0B2B5A 146.14%
     ),
-    url('/images/image1.png') center no-repeat;
+    url('https://utfs.io/f/txXKmXW6aEb8auhAfHQUWzYPrEl1Q67p4My3VRAmtdnsgINv') center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;

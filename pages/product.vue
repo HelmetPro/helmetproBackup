@@ -7,7 +7,7 @@
   <!-- Image Section -->
   <div class="md:col-span-1 shadow-2xl">
     <NuxtImg
-      src="/images/machine3.png"
+      src="https://utfs.io/f/txXKmXW6aEb85huVut1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF"
       alt="Revolutionizing Helmet Hygiene with the Helmet Cleaning Vending Machine - Helmet Pro Solutions"
       class="w-full h-full object-cover rounded-lg shadow-xl border-4 border-blue-200"
     />
@@ -51,7 +51,7 @@
     <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div ref="product_feature_img" class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
+            <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" loading="lazy" />
           </div>
 
             <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
@@ -121,7 +121,7 @@
         <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
 
           <div  class="lg:hidden block w-full  lg:rounded-t-3xl overflow-hidden">
-            <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="/images/machine4.png" loading="lazy" />
+            <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" loading="lazy" />
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left p-5 lg:p-0 bg-white">
             <div class="flex flex-col mb-5 items-start ">              
@@ -279,7 +279,7 @@
 
           </div>
           <div ref="product_specifications_img" class="hidden lg:block lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="/images/machine4.png" loading="lazy" />
+            <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" loading="lazy" />
           </div>
         </div>
       </section>
@@ -311,7 +311,7 @@ definePageMeta({
           "@type": "WebPage",
           "name": "HelmetPro Blog",
           "url": "https://www.helmetprosolutions.com/blog",
-          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "logo": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP",
           "description": "The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time."
         }),
       }

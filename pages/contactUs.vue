@@ -6,7 +6,7 @@
         <NuxtImg 
           alt="Helmet Cleaning Vending Machine" 
           class="h-96 w-1/3 object-contain rounded-lg " 
-          src="/images/contactus.jpg" 
+          src="https://utfs.io/f/txXKmXW6aEb8Pj7gjV6lR1PiHk73G6S29LbdaweDFNOmjcBz" 
           loading="lazy"
         />
         <div class="flex-1 py-8 pr-5 p-10">
@@ -24,7 +24,7 @@
           <NuxtImg 
             alt="Helmet Cleaning Vending Machine" 
             class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
-            src="/images/contactus.jpg" 
+            src="https://utfs.io/f/txXKmXW6aEb8Pj7gjV6lR1PiHk73G6S29LbdaweDFNOmjcBz" 
             loading="lazy"
           />
           <p class="leading-relaxed text-base text-center">
@@ -131,7 +131,7 @@ definePageMeta({
             "@type": "Organization",
             "name": "HelmetPro",
             "url": "https://www.helmetprosolutions.com",
-            "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+            "logo": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+63 962-753-3915",

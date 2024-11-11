@@ -7,7 +7,7 @@
       <div class="custom-bg-image">
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
         <div class="relative z-10 mx-auto flex flex-col items-center justify-center text-center p-6">
-          <NuxtImg class="w-1/2 lg:w-1/4 mb-8 object-cover rounded-3xl shadow-lg" alt="hero" src="/images/logo3.png" loading="lazy"/>
+          <NuxtImg class="w-1/2 lg:w-1/4 mb-8 object-cover rounded-3xl shadow-lg" alt="hero" src="https://utfs.io/f/txXKmXW6aEb81WtnRa2tpNoBzsFYHn4jrO0gE6hbRq2wIcaT" loading="lazy"/>
           <h1 class="text-center text-3xl font-extrabold mb-4 text-white">{{ pageName }}</h1>
         </div>
       </div>
@@ -21,7 +21,7 @@
         <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
-            <NuxtImg src="/images/logo2.png" alt="Logo" class="h-12 md:h-16" loading="lazy"/>
+            <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8l1xnnMTULFAz3OGEhrT62oYjiBmM5ebJtvDp" alt="Logo" class="h-12 md:h-16" loading="lazy"/>
           </NuxtLink>
 
           <!-- Burger Menu for Mobile -->
@@ -179,7 +179,7 @@
     
     <!-- Logo Section -->
     <div class="flex items-center mb-6 md:mb-0">
-      <NuxtImg src="/images/logo2.png" alt="Logo" class="h-20 md:h-[120px] mr-4" loading="lazy"/>
+      <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8l1xnnMTULFAz3OGEhrT62oYjiBmM5ebJtvDp" alt="Logo" class="h-20 md:h-[120px] mr-4" loading="lazy"/>
     </div>
 
     <!-- Contact Section -->
@@ -319,7 +319,7 @@ onUnmounted(() => {
     rgba(120, 175, 253, 0.1) 11.52%,
     #0B2B5A 146.14%
   ),
-  url('/images/image2.png');
+  url('https://utfs.io/f/txXKmXW6aEb8kLxLxhJRBVnzZS2J1WucE7HgeNFxQDytar5l');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

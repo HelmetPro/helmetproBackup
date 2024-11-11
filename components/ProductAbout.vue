@@ -3,7 +3,7 @@
       <!-- <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div ref="product_feature_img" class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
+            <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" loading="lazy" />
           </div>
 
             <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
@@ -74,7 +74,7 @@
         <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
 
           <div  class="lg:hidden block w-full  lg:rounded-t-3xl overflow-hidden">
-            <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="/images/machine4.png" loading="lazy" />
+            <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" loading="lazy" />
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left p-5 lg:p-0 bg-white">
             <div class="flex flex-col mb-5 items-start ">              
@@ -232,7 +232,7 @@
 
           </div>
           <div ref="product_specifications_img" class="hidden lg:block lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="/images/machine4.png" loading="lazy" />
+            <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" loading="lazy" />
           </div>
         </div>
       </section> -->
@@ -242,10 +242,10 @@
     <section>
       <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap ">
         <div ref="image1" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Helmet Cleaning Service" src="/images/product4.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Helmet Cleaning Service" src="https://utfs.io/f/txXKmXW6aEb8MTAlHo00qvQAcuWwpTLrRzC692dKMVjkGx1g" loading="lazy"/>
         </div>
         <div ref="image_mobile1" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Helmet Cleaning Service" src="/images/mobileview/helmet.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Helmet Cleaning Service" src="https://utfs.io/f/txXKmXW6aEb8IDbrmMKSrAUb9D5fERNjXTZunqmiy0PpVt7v" loading="lazy"/>
         </div>
         <div ref="paragraph1" class="px-4 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
           <h1 class="lg:text-5xl text-indigo-700 py-2">Deep-Clean Technology</h1>
@@ -274,11 +274,11 @@
 
       <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
         <div ref="image2" class="lg:flex hidden w-full justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Helmet Pro" src="/images/product2.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Helmet Pro" src="https://utfs.io/f/txXKmXW6aEb8rbGmXnHHSJkm2IYFgA6RpltDVBb8uPzN3jc9" loading="lazy"/>
         </div>
         <!-- Mobile view -->
         <div ref="image_mobile2" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Turbo-Dry System" src="/images/mobileview/helmet2.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Turbo-Dry System" src="https://utfs.io/f/txXKmXW6aEb8ZsXxzeQB50AjlLUvVGXit4FExcaJgSyRsd8K" loading="lazy"/>
         </div>
         <div ref="paragraph2" class="px-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
           <h1 class=" lg:text-5xl text-indigo-700 py-2">Turbo-Dry System</h1>
@@ -307,11 +307,11 @@
 
       <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
         <div ref="image3" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Bacteria-Busting Power" src="/images/product3.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Bacteria-Busting Power" src="https://utfs.io/f/txXKmXW6aEb8FMHeo3ttnfW6FTJVZcOL5ixKq0k3E9SaDv2H" loading="lazy"/>
         </div>
         <!-- Mobile view -->
         <div ref="image_mobile3" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Bacteria-Busting Power" src="/images/mobileview/helmet3.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Bacteria-Busting Power" src="https://utfs.io/f/txXKmXW6aEb8AdicGwFPlv2UYGwEDixosRSVBd59ujqzIcF8" loading="lazy"/>
         </div>
         <div ref="paragraph3" class="px-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
           <h1 class=" lg:text-5xl text-indigo-700 py-2">Bacteria-Busting Power</h1>

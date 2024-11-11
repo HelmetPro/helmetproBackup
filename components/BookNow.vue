@@ -6,7 +6,7 @@
     >
       <div
         class="mx-auto flex justify-center items-center"
-        style="background-image: url('/images/partnership3.jpg'); background-size: cover; background-position: center;"
+        style="background-image: url('https://utfs.io/f/txXKmXW6aEb8a5EZimQUWzYPrEl1Q67p4My3VRAmtdnsgINv'); background-size: cover; background-position: center;"
       >
         <!-- Color overlay -->
         <div class="absolute inset-0 bg-black opacity-70 rounded-md"></div>
@@ -42,7 +42,7 @@
           <div class="lg:w-2/4 w-full flex flex-col items-center shadow-md justify-center p-4 lg:p-8">
             <div class="w-full rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
               <NuxtImg
-                src="/images/machine10.png"
+                src="https://utfs.io/f/txXKmXW6aEb8PJzLkt76lR1PiHk73G6S29LbdaweDFNOmjcB"
                 alt="Helmet Clean and Fresh Machine"
                 class="w-full h-auto object-cover rounded-lg"
                 loading="lazy"
