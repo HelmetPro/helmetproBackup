@@ -324,7 +324,7 @@ onUnmounted(() => {
     rgba(120, 175, 253, 0.1) 11.52%,
     #0B2B5A 146.14%
   ),
-  url('https://utfs.io/f/txXKmXW6aEb8kLxLxhJRBVnzZS2J1WucE7HgeNFxQDytar5l');
+  url('https://utfs.io/f/txXKmXW6aEb8WNUUpubcxwak1M5s7IrEVfey4pvngCuh36Tm');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
