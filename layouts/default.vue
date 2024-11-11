@@ -35,9 +35,9 @@
     <!-- Navigation Bar -->
     <section>
       <nav
-        :class="['absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-700 to-teal-500 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
+        :class="['absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-700 to-teal-600 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
       >
-        <div class=" mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
+        <div class="mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
             <NuxtImg src="https://utfs.io/f/txXKmXW6aEb8l1xnnMTULFAz3OGEhrT62oYjiBmM5ebJtvDp" alt="Logo" class="h-12 md:h-16" loading="lazy" />

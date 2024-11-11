@@ -180,7 +180,6 @@
       <slot />
     </div>
 
-    <!-- Footer Section -->
 <!-- Footer Section -->
 <footer class="bg-gradient-to-r from-blue-700 to-teal-500  p-6 md:p-8 text-gray-800">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
