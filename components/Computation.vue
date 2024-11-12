@@ -2,6 +2,7 @@
   
   <div class="bg-gradient-to-r from-blue-300 to-teal-100">
 
+
     <!-- Section 1: Introduction -->
     <section class="text-gray-600 body-font">
       <div class="container px-5 pt-20 mx-auto">
@@ -37,7 +38,12 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- Section 2: Income Breakdown Cards -->
+    <section class="text-gray-700 body-font py-20">
+      <div class="container mx-auto px-5">
         <!-- Grid Layout -->
         <div class="grid gap-12 grid-cols-1 md:grid-cols-3">
           <!-- Assumption 1 -->
