@@ -1,13 +1,12 @@
 <template>
   <section ref="sectionRef" class="flex flex-wrap  lg:gap-8 lg:p-8 bg-gradient-to-r from-blue-300 to-teal-100">
     <!-- Form Section with Results Inside -->
-    <div class="w-full lg:w-2/3 bg-white p-4 lg:p-6 shadow-xl  rounded-xl">
+    <div class="w-full lg:w-2/3 bg-white p-4 lg:p-6 shadow-2xl  rounded-xl">
       
       <!-- 1st Row: Header -->
-      <div class="mb-6">
-        <h2 class="text-3xl font-extrabold text-blue-800 mb-6">
-          Discover Your Profit Potential with the HelmetPro Revenue & Cost Calculator!
-        </h2>
+      <div class="mb-6 text-center items-center">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl  font-extrabold text-indigo-600 mb-4 sm:mb-6">Discover Your Profit Potential with the HelmetPro Revenue & Cost Calculator!</h2>
+
         <p class="text-gray-600 mb-6 leading-relaxed">
           Understand your revenue potential and manage costs effectively with the HelmetPro calculator. See how each wash contributes to your bottom line and maximize your profits!
         </p>
@@ -19,7 +18,7 @@
         <div class="w-full lg:w-1/2">
           <div class="mb-6">
             <label class="block text-2xl font-semibold mb-2">Currency</label>
-            <select v-model="formData.currency" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <select v-model="formData.currency" class="w-full lg:p-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option value="USD">$ - USD</option>
               <option value="EUR">€ - EUR</option>
               <option value="PHP">₱ - PHP</option>
@@ -35,7 +34,7 @@
                 :id="field.name"
                 :type="field.type"
                 v-model="formData[field.name]"
-                class="w-full pl-10 text-2xl font-semibold border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500"
+                class="w-full pl-10 text-2xl font-semibold lg:p-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500"
                 :placeholder="field.placeholder"
               />
             </div>
@@ -44,7 +43,7 @@
         </div>
 
         <!-- Right Column: Results Section -->
-        <div class="w-full lg:w-1/2 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-4 lg:p-6 rounded-xl shadow-xl">
+        <div class="w-full lg:w-1/2 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-4 lg:p-6 rounded-xl shadow-2xl">
           <h3 class="text-xl font-semibold">Daily Revenue</h3>
           <div class="flex items-center space-x-3 mb-6">
             <span>{{ currencySymbol }}</span>
