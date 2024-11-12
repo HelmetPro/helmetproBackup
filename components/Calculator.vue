@@ -82,8 +82,16 @@
       </p>
 
       <!-- Learn More Button -->
-      <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+      <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+      >
+        <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        class=""
+      >
         Learn More
+      </a>
       </button>
     </div>
   </section>
