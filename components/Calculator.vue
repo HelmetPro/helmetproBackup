@@ -1,93 +1,102 @@
 <template>
-  <section ref="sectionRef" class="flex flex-wrap gap-8 p-8 bg-gradient-to-r from-blue-300 to-teal-100">
-    <!-- Form Section -->
-    <div class="w-full lg:w-1/2 bg-white p-6 shadow-xl rounded-xl">
-      <h2 class="text-3xl font-extrabold text-blue-800 mb-6">
-        Discover Your Profit Potential with the HelmetPro Revenue & Cost Calculator!
-      </h2>
-      <p class="text-gray-600 mb-6 leading-relaxed">
-        Understand your revenue potential and manage costs effectively with the HelmetPro calculator. See how each wash contributes to your bottom line and maximize your profits!
-      </p>
-
-      <!-- Currency Dropdown -->
+  <section ref="sectionRef" class="flex flex-wrap  lg:gap-8 lg:p-8 bg-gradient-to-r from-blue-300 to-teal-100">
+    <!-- Form Section with Results Inside -->
+    <div class="w-full lg:w-2/3 bg-white p-4 lg:p-6 shadow-xl  rounded-xl">
+      
+      <!-- 1st Row: Header -->
       <div class="mb-6">
-        <label class="block text-sm font-semibold mb-2">Currency</label>
-        <select v-model="formData.currency" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <option value="USD">$ - USD</option>
-          <option value="EUR">€ - EUR</option>
-          <option value="PHP">₱ - PHP</option>
-        </select>
-        <p class="text-sm text-gray-500 mt-2">Select the currency to display in calculations</p>
+        <h2 class="text-3xl font-extrabold text-blue-800 mb-6">
+          Discover Your Profit Potential with the HelmetPro Revenue & Cost Calculator!
+        </h2>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Understand your revenue potential and manage costs effectively with the HelmetPro calculator. See how each wash contributes to your bottom line and maximize your profits!
+        </p>
       </div>
 
-      <!-- Input Fields -->
-      <div v-for="field in fields" :key="field.label" class="mb-6">
-        <label :for="field.name" class="block text-sm font-semibold mb-2">{{ field.label }}</label>
-        <div class="relative">
-          <!-- Only display currency symbol for fields that need it -->
-          <span v-if="field.name !== 'utilizationRate'" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-lg font-semibold">{{ currencySymbol }}</span>
-          <input
-            :id="field.name"
-            :type="field.type"
-            v-model="formData[field.name]"
-            class="w-full pl-10  border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            :placeholder="field.placeholder"
-          />
+      <!-- 2nd Row: 2-Column Layout -->
+      <div class="flex flex-wrap lg:flex-nowrap lg:gap-6">
+        <!-- Left Column: Form Inputs -->
+        <div class="w-full lg:w-1/2">
+          <div class="mb-6">
+            <label class="block text-2xl font-semibold mb-2">Currency</label>
+            <select v-model="formData.currency" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="USD">$ - USD</option>
+              <option value="EUR">€ - EUR</option>
+              <option value="PHP">₱ - PHP</option>
+            </select>
+            <p class="text-sm text-gray-500 mt-2">Select the currency to display in calculations</p>
+          </div>
+
+          <div v-for="field in fields" :key="field.label" class="mb-6">
+            <label :for="field.name" class="block text-sm lg:text-2xl font-semibold mb-2">{{ field.label }}</label>
+            <div class="relative">
+              <span v-if="field.name !== 'utilizationRate'" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-lg font-semibold">{{ currencySymbol }}</span>
+              <input
+                :id="field.name"
+                :type="field.type"
+                v-model="formData[field.name]"
+                class="w-full pl-10 text-2xl font-semibold border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500"
+                :placeholder="field.placeholder"
+              />
+            </div>
+            <p class="text-sm text-gray-500 mt-2">{{ field.helpText }}</p>
+          </div>
         </div>
-        <p class="text-sm text-gray-500 mt-2">{{ field.helpText }}</p>
+
+        <!-- Right Column: Results Section -->
+        <div class="w-full lg:w-1/2 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-4 lg:p-6 rounded-xl shadow-xl">
+          <h3 class="text-xl font-semibold">Daily Revenue</h3>
+          <div class="flex items-center space-x-3 mb-6">
+            <span>{{ currencySymbol }}</span>
+            <p ref="dailyRevenue" class="text-3xl font-bold">{{ formattedResults.dailyRevenue }}</p>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4">Monthly Revenue</h3>
+          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
+            <span>{{ currencySymbol }}</span>
+            <p ref="monthlyRevenue" class="text-3xl font-bold">{{ formattedResults.monthlyRevenue }}</p>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4">Monthly Cost</h3>
+          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
+            <span>{{ currencySymbol }}</span>
+            <p ref="monthlyCost" class="text-3xl font-bold">{{ formattedResults.monthlyCost }}</p>
+          </div>
+
+          <h3 class="text-2xl lg:2xl font-semibold mb-4">Gross Profit</h3>
+          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
+            <span class="text-4xl">{{ currencySymbol }}</span>
+            <p ref="grossProfit" class="text-5xl font-extrabold">{{ formattedResults.grossProfit }}</p>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4">Profit Margin</h3>
+          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
+            <span>{{ currencySymbol }}</span>
+            <p ref="profitMargin" class="text-3xl font-bold">{{ formattedResults.profitMargin }}</p>
+          </div>
+
+          <h2 class="text-4xl font-bold text-white mb-4">Maximize Your Profits!</h2>
+          <p class="text-white mb-6">
+            Optimize your costs and increase your revenue with HelmetPro. Discover more ways to boost your business.
+          </p>
+
+          <!-- Learn More Button -->
+          <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+          </button>
+        </div>
       </div>
-    </div>
-
-    <!-- Results Section -->
-    <div class="w-full lg:w-1/3 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-6 rounded-xl shadow-xl">
-      <h3 class="text-xl font-semibold">Daily Revenue</h3>
-      <div class="flex items-center space-x-3 mb-6">
-        <span>{{ currencySymbol }}</span>
-        <p ref="dailyRevenue" class="text-3xl font-bold">{{ formattedResults.dailyRevenue }}</p>
-      </div>
-
-      <h3 class="text-xl font-semibold mb-4">Monthly Revenue</h3>
-      <div class="flex items-center space-x-3 mb-6">
-        <span>{{ currencySymbol }}</span>
-        <p ref="monthlyRevenue" class="text-3xl font-bold">{{ formattedResults.monthlyRevenue }}</p>
-      </div>
-
-      <h3 class="text-xl font-semibold mb-4">Monthly Cost</h3>
-      <div class="flex items-center space-x-3 mb-6">
-        <span>{{ currencySymbol }}</span>
-        <p ref="monthlyCost" class="text-3xl font-bold">{{ formattedResults.monthlyCost }}</p>
-      </div>
-
-      <h3 class="text-xl font-semibold mb-4">Gross Profit</h3>
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="text-4xl">{{ currencySymbol }}</span>
-        <p ref="grossProfit" class="text-5xl font-extrabold">{{ formattedResults.grossProfit }}</p>
-      </div>
-
-      <h3 class="text-xl font-semibold mb-4">Profit Margin</h3>
-      <div class="flex items-center space-x-3 mb-6">
-        <span>{{ currencySymbol }}</span>
-        <p ref="profitMargin" class="text-3xl font-bold">{{ formattedResults.profitMargin }}</p>
-      </div>
-
-      <h2 class="text-4xl font-bold text-white mb-4">Maximize Your Profits!</h2>
-      <p class="text-white mb-6">
-        Optimize your costs and increase your revenue with HelmetPro. Discover more ways to boost your business.
-      </p>
-
-      <!-- Learn More Button -->
-      <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn More
-        </a>
-      </button>
     </div>
   </section>
 </template>
+
+
 
 
 <script setup>
@@ -228,7 +237,5 @@ section {
 }
 
 /* Styling for result sections */
-section .w-full {
-  padding: 2rem;
-}
+
 </style>
