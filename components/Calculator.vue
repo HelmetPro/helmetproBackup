@@ -29,7 +29,7 @@
           <div v-for="field in fields" :key="field.label" class="mb-6">
             <label :for="field.name" class="block text-sm lg:text-2xl font-semibold mb-2">{{ field.label }}</label>
             <div class="relative">
-              <span v-if="field.name !== 'utilizationRate'" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-lg font-semibold">{{ currencySymbol }}</span>
+              <span v-if="field.name !== 'utilizationRate'" class="absolute  left-1 top-1/2 transform -translate-y-1/2 text-2xl font-semibold">{{ currencySymbol }}</span>
               <input
                 :id="field.name"
                 :type="field.type"
