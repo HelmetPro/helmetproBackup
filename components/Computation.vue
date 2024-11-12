@@ -1,5 +1,7 @@
 <template>
+  
   <div class="bg-gradient-to-r from-blue-300 to-teal-100">
+
     <!-- Section 1: Introduction -->
     <section class="text-gray-600 body-font">
       <div class="container px-5 pt-20 mx-auto">

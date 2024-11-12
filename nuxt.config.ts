@@ -187,6 +187,10 @@ export default defineNuxtConfig({
                 hid: 'tawk-to',
                 async: true,
                 crossorigin: 'anonymous'
+              },
+              {
+                src: 'https://static.elfsight.com/platform/platform.js',
+                async: true
               }
               // {
               //   hid: 'tawk-to',
