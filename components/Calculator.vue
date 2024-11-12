@@ -24,8 +24,8 @@
       <div v-for="field in fields" :key="field.label" class="mb-6">
         <label :for="field.name" class="block text-sm font-semibold mb-2">{{ field.label }}</label>
         <div class="relative">
-          <!-- Input field with currency symbol inside -->
-          <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-lg font-semibold">{{ currencySymbol }}</span>
+          <!-- Only display currency symbol for fields that need it -->
+          <span v-if="field.name !== 'utilizationRate'" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-lg font-semibold">{{ currencySymbol }}</span>
           <input
             :id="field.name"
             :type="field.type"
@@ -64,12 +64,6 @@
         <p ref="grossProfit" class="text-5xl font-extrabold">{{ formattedResults.grossProfit }}</p>
       </div>
 
-      <!-- <h3 class="text-xl font-semibold mb-4">Difference (Revenue - Cost)</h3>
-      <div class="flex items-center space-x-3 mb-6">
-        <span>{{ currencySymbol }}</span>
-        <p ref="profitDifference" class="text-3xl font-bold">{{ formattedResults.profitDifference }}</p>
-      </div> -->
-
       <h3 class="text-xl font-semibold mb-4">Profit Margin</h3>
       <div class="flex items-center space-x-3 mb-6">
         <span>{{ currencySymbol }}</span>
@@ -82,20 +76,19 @@
       </p>
 
       <!-- Learn More Button -->
-      <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
-      >
+      <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
         <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
-        target="_blank"
-        rel="noopener noreferrer"
-        class=""
-      >
-        Learn More
-      </a>
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn More
+        </a>
       </button>
     </div>
   </section>
 </template>
+
 
 <script setup>
 import { ref, computed, watch } from 'vue';
@@ -202,7 +195,7 @@ const fields = [
     helpText: 'Price per helmet wash in your selected currency'
   },
   {
-    label: 'Utilization Rate (%)',
+    label: 'Enter the number of helmets washed each day',
     name: 'utilizationRate',
     type: 'number',
     placeholder: 'Enter utilization rate',
