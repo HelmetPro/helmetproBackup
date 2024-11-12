@@ -203,10 +203,10 @@ const fields = [
     helpText: 'Price per helmet wash in your selected currency'
   },
   {
-    label: 'Enter the number of helmets washed each day',
+    label: 'Enter the Estimated Helmets Washed Daily',
     name: 'utilizationRate',
     type: 'number',
-    placeholder: 'Enter the number of helmets washed each day',
+    placeholder: 'Enter the Estimated Helmets Washed Daily',
     helpText: 'Estimated percentage of machine utilization'
   },
   {
