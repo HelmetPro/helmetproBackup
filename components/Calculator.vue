@@ -207,7 +207,7 @@ const fields = [
     label: 'Enter the number of helmets washed each day',
     name: 'utilizationRate',
     type: 'number',
-    placeholder: 'Enter utilization rate',
+    placeholder: 'Enter the number of helmets washed each day',
     helpText: 'Estimated percentage of machine utilization'
   },
   {
