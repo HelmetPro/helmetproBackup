@@ -167,7 +167,7 @@ async function handleSubmit(event) {
   };
 
   try {
-  const response = await fetch('https://script.google.com/macros/s/AKfycbyF6M2VVn9elQiPZP8C7t1m6Vh8vlfJi0i1r06XDlaYi5DEn1HGeqrMgu7gIbpdtqir9w/exec', {
+  const response = await fetch('https://script.google.com/macros/s/AKfycbweqoQPOq3k6NovO6XC1zTDlEeaBiNC2i1rlsCry3YXthqqq1bKM_oxnf4C1AftS-w6kw/exec', {
     method: 'POST',
     mode: 'no-cors',  
     body: new URLSearchParams(formSubmissionData),
