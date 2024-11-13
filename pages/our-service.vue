@@ -11,9 +11,9 @@
         </p>
         <nuxt-link 
           to="/contactus" 
-          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-lg transition-transform transform hover:scale-105"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
         >
-          Get Started
+          Inquire Now
         </nuxt-link>
       </div>
     </div>
@@ -38,20 +38,34 @@
         <p class="text-lg sm:text-xl mb-8">
           Contact us today to create a vending machine design that aligns with your brand and vision.
         </p>
-        <nuxt-link 
+        <!-- <NuxtLink 
           to="/contactus" 
           class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-lg transition-transform transform hover:scale-105"
         >
           Get Started
-        </nuxt-link>
+        </NuxtLink> -->
+
+        <button
+          @click="isModalOpen = true"
+          class="px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition duration-300"
+        >
+          Book an Appointment
+        </button>
       </div>
     </div>
+    <FormAppointmentModal
+      v-if="isModalOpen"
+      @close="isModalOpen = false"
+    />
   </section>
 </template>
 
 <script setup>
-import { ref } from 'vue'
 
+import { ref } from 'vue'
+import FormAppointmentModal from "../components/FormAppointment.vue";
+
+const isModalOpen = ref(false);
 const images = [
   'https://utfs.io/f/txXKmXW6aEb8WWolpsbcxwak1M5s7IrEVfey4pvngCuh36Tm',
   'https://utfs.io/f/txXKmXW6aEb8t2Nds9W6aEb84pkeofOrBZgyztcT50XqICmH',

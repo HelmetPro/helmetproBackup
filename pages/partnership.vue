@@ -28,17 +28,55 @@
       <div class="relative z-10 text-center">
         <h1 class="text-5xl lg:text-6xl font-extrabold text-indigo-600 mb-6">Join Our Distributor Network</h1>
         <p class="text-lg text-white mb-5">Unlock your potential and empower your future with our guidance and support as a distributor.</p>
-        <a
+        <!-- <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSceprgT-LisDTR-giEVZzgx9q2w-JLKnGDMZ3If8sxXXk4O4w/viewform"
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out"
       >
       Become a Distributor
-      </a>  
+      </a>   -->
+      <button
+                @click="isModalOpenFormDistributor = true"
+                class="px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition duration-300"
+              >
+              Become a Distributor
+              </button>
       </div>
     </section>
-    <ProductHero3  />
+    <section class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap items-center justify-between mx-auto">
+        <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 bg-white p-8 rounded-lg shadow-lg">
+          <h2 class="text-sm title-font text-indigo-600 tracking-widest uppercase mb-1">More Than Just Vending Machines</h2>
+          <h1 class="text-gray-900 text-4xl title-font font-semibold mb-4">We’re Your Partner in Business Growth</h1>
+          <p class="w-full text-lg text-gray-800 mx-auto font-medium mb-6">
+            Our commitment goes beyond supplying state-of-the-art helmet cleaning vending machines. We’re here to support your business every step of the way. From guidance and maintenance to addressing your evolving needs, our partnership ensures
+            <br />
+            <span class="text-indigo-600 text-2xl font-extrabold">your long-term success.</span>
+          </p>
+
+          <div class="flex">
+            <!-- <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >
+              Book Now
+            </a> -->
+            <button
+                @click="isModalOpenFormAppointment = true"
+                class="px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition duration-300"
+              >
+                Book an Appointment
+              </button>
+          </div>
+        </div>
+        <NuxtImg alt="Partnership" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-lg shadow-lg" src="https://utfs.io/f/txXKmXW6aEb8oVlrcJPsTc3VaUluMngjBrm6XEJwQ5PI9bxZ" loading="lazy"/>
+      </div>
+    </div>
+  </section>
     <section class="py-16 text-center">
       <h2 class="text-4xl font-bold mb-8 text-indigo-600">Visualize Your Success</h2>
       <div class="flex flex-wrap justify-center gap-6">
@@ -66,13 +104,25 @@
       Join Our Facebook Group
       </a>      
     </section>
-    
+    <FormAppointmentModal
+      v-if="isModalOpenFormAppointment"
+      @close="isModalOpenFormAppointment = false"
+    />
+    <FormDistributorModal
+      v-if="isModalOpenFormDistributor"
+      @close="isModalOpenFormDistributor = false"
+    />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 import { useRoute } from 'vue-router'
+import FormAppointmentModal from "../components/FormAppointment.vue";
+import FormDistributorModal from "../components/FormDistributor.vue";
+const isModalOpenFormAppointment = ref(false);
+const isModalOpenFormDistributor = ref(false);
+
 const route = useRoute()
 
 useHead({

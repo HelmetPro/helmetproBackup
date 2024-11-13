@@ -44,6 +44,14 @@
       <p ref="revolutionizing_paragraph4">
         Our <strong>Helmet Cleaning Vending Machine</strong> is incredibly <strong>user-friendly</strong>, allowing anyone to clean their helmet in minutes. This standalone solution is perfect for riders who value cleanliness and convenience, making <strong>helmet hygiene</strong> as easy as inserting a coin or card.
       </p>
+      <div class="text-right mt-6">
+        <NuxtLink 
+          to="/contactus" 
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+        >
+          Inquire Now
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </div>
