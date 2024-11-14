@@ -225,7 +225,7 @@
       </p>
       <p class="flex items-center py-2">
         <i class="fas fa-map-marker-alt text-white text-4xl mb-2"></i>
-        <span class="font-medium text-white pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Spring Vile Molino 3 Bacoor</NuxtLink></span>
+        <span class="font-medium text-white pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Springville Molino 3 Bacoor</NuxtLink></span>
       </p>
     </div>
 
@@ -276,7 +276,7 @@
       </p>
       <p class="flex items-center py-2">
         <i class="fas fa-map-marker-alt text-white text-4xl mb-2"></i>
-        <span class="font-medium text-white pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Spring Vile Molino 3 Bacoor</NuxtLink></span>
+        <span class="font-medium text-white pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Springville  Molino 3 Bacoor</NuxtLink></span>
       </p>
     </div>
 
