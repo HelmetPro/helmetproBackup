@@ -56,6 +56,32 @@
         <p ref="about_us_paragraph2" class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
           With our <strong>Helmet Cleaning Vending Machine</strong>, riders can easily access high-quality helmets without the hassle of ownership, making us the go-to choice for those who value convenience and cleanliness. Our mission is to promote <strong>helmet hygiene</strong> and foster a safer riding community through our advanced solutions. Trust <strong>Helmet Pro</strong> for all your helmet needs and experience the difference with <strong>Helmet Pro Solutions</strong>.
         </p>
+        <div class="flex justify-center items-center mt-8">
+        <a 
+          href="https://uzgcdn-nn.myshopify.com/products/helmet-cleaning-vending-machine-1" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex items-center gap-4 animate-bounce"
+        >
+          <svg 
+            version="1.1" 
+            id="Layer_1" 
+            x="0px" y="0px" 
+            viewBox="0 0 122.9 107.5" 
+            class="text-white w-6 h-6 lg:w-8 lg:h-8 motion-safe:animate-pulse">
+            <g>
+              <path 
+                d="M3.9,7.9C1.8,7.9,0,6.1,0,3.9C0,1.8,1.8,0,3.9,0h10.2c0.1,0,0.3,0,0.4,0c3.6,0.1,6.8,0.8,9.5,2.5c3,1.9,5.2,4.8,6.4,9.1 c0,0.1,0,0.2,0.1,0.3l1,4H119c2.2,0,3.9,1.8,3.9,3.9c0,0.4-0.1,0.8-0.2,1.2l-10.2,41.1c-0.4,1.8-2,3-3.8,3v0H44.7 c1.4,5.2,2.8,8,4.7,9.3c2.3,1.5,6.3,1.6,13,1.5h0.1v0h45.2c2.2,0,3.9,1.8,3.9,3.9c0,2.2-1.8,3.9-3.9,3.9H62.5v0 c-8.3,0.1-13.4-0.1-17.5-2.8c-4.2-2.8-6.4-7.6-8.6-16.3l0,0L23,13.9c0-0.1,0-0.1-0.1-0.2c-0.6-2.2-1.6-3.7-3-4.5 c-1.4-0.9-3.3-1.3-5.5-1.3c-0.1,0-0.2,0-0.3,0H3.9L3.9,7.9z M96,88.3c5.3,0,9.6,4.3,9.6,9.6c0,5.3-4.3,9.6-9.6,9.6 c-5.3,0-9.6-4.3-9.6-9.6C86.4,92.6,90.7,88.3,96,88.3L96,88.3z M53.9,88.3c5.3,0,9.6,4.3,9.6,9.6c0,5.3-4.3,9.6-9.6,9.6 c-5.3,0-9.6-4.3-9.6-9.6C44.3,92.6,48.6,88.3,53.9,88.3L53.9,88.3z M33.7,23.7l8.9,33.5h63.1l8.3-33.5H33.7L33.7,23.7z" 
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+          <span class="text-lg lg:text-xl">Buy Now</span>
+        </a>
+      </div>
+      <span class="text-gray-400 text-xs font-semibold block text-center  ">
+        Shop directly from our official Shopify store, Enjoy a secure and convenient purchasing experience
+      </span>
       </div>
 
       <div class="flex flex-col lg:flex-row mb-12 gap-2">
@@ -78,6 +104,7 @@
           <p ref="our_factory_paragraph3" class="text-lg mb-4">
             Each day, our team innovates and collaborates, driven by a shared passion for excellence. We pride ourselves on our ability to adapt to changing market demands while remaining true to our core values of integrity, quality, and service. 
           </p>
+          
         </div>
       </div>
 
@@ -111,7 +138,34 @@
 
           We invite you to join us on this journey as we continue to grow and evolve. Together, we can create a future where quality and sustainability go hand in hand.
         </p>
+        <div class="flex justify-center items-center mt-8">
+        <a 
+          href="https://uzgcdn-nn.myshopify.com/products/helmet-cleaning-vending-machine-1" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex items-center gap-4 animate-bounce"
+        >
+          <svg 
+            version="1.1" 
+            id="Layer_1" 
+            x="0px" y="0px" 
+            viewBox="0 0 122.9 107.5" 
+            class="text-white w-6 h-6 lg:w-8 lg:h-8 motion-safe:animate-pulse">
+            <g>
+              <path 
+                d="M3.9,7.9C1.8,7.9,0,6.1,0,3.9C0,1.8,1.8,0,3.9,0h10.2c0.1,0,0.3,0,0.4,0c3.6,0.1,6.8,0.8,9.5,2.5c3,1.9,5.2,4.8,6.4,9.1 c0,0.1,0,0.2,0.1,0.3l1,4H119c2.2,0,3.9,1.8,3.9,3.9c0,0.4-0.1,0.8-0.2,1.2l-10.2,41.1c-0.4,1.8-2,3-3.8,3v0H44.7 c1.4,5.2,2.8,8,4.7,9.3c2.3,1.5,6.3,1.6,13,1.5h0.1v0h45.2c2.2,0,3.9,1.8,3.9,3.9c0,2.2-1.8,3.9-3.9,3.9H62.5v0 c-8.3,0.1-13.4-0.1-17.5-2.8c-4.2-2.8-6.4-7.6-8.6-16.3l0,0L23,13.9c0-0.1,0-0.1-0.1-0.2c-0.6-2.2-1.6-3.7-3-4.5 c-1.4-0.9-3.3-1.3-5.5-1.3c-0.1,0-0.2,0-0.3,0H3.9L3.9,7.9z M96,88.3c5.3,0,9.6,4.3,9.6,9.6c0,5.3-4.3,9.6-9.6,9.6 c-5.3,0-9.6-4.3-9.6-9.6C86.4,92.6,90.7,88.3,96,88.3L96,88.3z M53.9,88.3c5.3,0,9.6,4.3,9.6,9.6c0,5.3-4.3,9.6-9.6,9.6 c-5.3,0-9.6-4.3-9.6-9.6C44.3,92.6,48.6,88.3,53.9,88.3L53.9,88.3z M33.7,23.7l8.9,33.5h63.1l8.3-33.5H33.7L33.7,23.7z" 
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+          <span class="text-lg lg:text-xl">Buy Now</span>
+        </a>
       </div>
+      <span class="text-gray-400 text-xs font-semibold block text-center  ">
+        Shop directly from our official Shopify store, Enjoy a secure and convenient purchasing experience
+      </span>
+      </div>
+      
     </div>
   </section>
 </template>
