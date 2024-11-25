@@ -185,7 +185,7 @@ const mediaList = ref([
   { src: 'https://utfs.io/f/txXKmXW6aEb8xddFqhmrlgFz0uoShVUIp6njet8vPdMTDywf' },
   { src: 'https://utfs.io/f/txXKmXW6aEb8c52U2ZWlm0cp329CiRFfTQoe8Iwa7rMAE5Xx' },
   { src: 'https://utfs.io/f/txXKmXW6aEb8jkAnbDcQseLHMGdXzShEm9I4Ub51Rgqy687T' },
-  { src: 'https://utfs.io/f/txXKmXW6aEb80UE4hWGiJSnzPheAx3bCfl8HZUOtuIq0MwL2', poster: 'https://utfs.io/f/txXKmXW6aEb8BT5NYl3iE9cNeP12iT4K5g7HMkBLaZyQbJDt' },
+  { src: '/video.mp4', poster: 'https://utfs.io/f/txXKmXW6aEb8BT5NYl3iE9cNeP12iT4K5g7HMkBLaZyQbJDt' },
 ]);
 
 const currentIndex = ref(0);
