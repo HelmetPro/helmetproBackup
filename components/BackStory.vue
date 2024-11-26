@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 body-font overflow-hidden">
-    <div class="container px-5 mx-auto pt-10">
+    <div class="lg:container lg:px-5 lg:mx-auto pt-10">
 
 
       <div class="flex flex-col text-center w-full mb-12 lg:px-5 lg:p-5 pt-5 bg-white rounded-lg shadow-2xl">
@@ -19,7 +19,7 @@
             <NuxtImg 
               
               alt="Helmet Cleaning Vending Machine" 
-              class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
+              class="h-96 w-96 object-cover rounded-lg shadow-2xl lg:m-2" 
               src="https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" 
               loading="lazy"
             />
@@ -27,7 +27,7 @@
           <div  ref="about_us_img2">
           <NuxtImg 
             alt="Helmet Parameter" 
-            class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
+            class="h-96 w-96 object-cover rounded-lg shadow-2xl lg:m-2" 
             src="https://utfs.io/f/txXKmXW6aEb8c52U2ZWlm0cp329CiRFfTQoe8Iwa7rMAE5Xx" 
             loading="lazy"
           />
@@ -36,7 +36,7 @@
           <NuxtImg 
             
             alt="Rider Specifications" 
-            class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
+            class="h-96 w-96 object-cover rounded-lg shadow-2xl lg:m-2" 
             src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" 
             loading="lazy"
           />
