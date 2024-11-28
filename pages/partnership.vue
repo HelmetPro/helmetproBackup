@@ -1,14 +1,14 @@
 <template>
-  <div class="font-sans text-gray-800 mx-auto bg-gradient-to-r from-blue-300 to-teal-100 min-h-screen">
+  <div class="font-sans text-gray-800 lg:mx-auto bg-gradient-to-r from-blue-300 to-teal-100 min-h-screen">
 
     <section class="flex flex-col items-center py-16 bg-gradient-to-r from-blue-300 to-teal-100 text-center">
       <div class="relative z-10 text-center">
         <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Why Join Us?</h1>
        
       </div>
-      <div class="flex flex-wrap justify-center gap-8">
+      <div class="flex flex-wrap lg:justify-center lg:gap-8">
         
-        <div v-for="(benefit, index) in benefits" :key="index" class="flex flex-col bg-white shadow-lg border border-slate-200 rounded-lg my-6 w-80 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+        <div v-for="(benefit, index) in benefits" :key="index" class="flex flex-col bg-white shadow-lg border border-slate-200 rounded-lg my-6 lg:w-80 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
           <div class="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center">
             <NuxtImg class="w-full h-full object-cover transition-opacity duration-300 hover:opacity-90" :src="benefit.icon" :alt="benefit.title" loading="lazy" />
           </div>
@@ -26,7 +26,7 @@
     <section class="relative bg-cover bg-center text-black py-16" style="background-image: url('https://utfs.io/f/txXKmXW6aEb86nueOakOJkcAUtmhrYT5Z7veHw2VjExaof0q');">
       <div class="absolute inset-0 bg-black opacity-70"></div> 
       <div class="relative z-10 text-center">
-        <h1 class="text-5xl lg:text-6xl font-extrabold text-indigo-600 mb-6">Join Our Distributor Network</h1>
+        <h1 class="text-4xl lg:text-6xl font-extrabold text-indigo-600 mb-6">Join Our Distributor Network</h1>
         <p class="text-lg text-white mb-5">Unlock your potential and empower your future with our guidance and support as a distributor.</p>
         <!-- <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSceprgT-LisDTR-giEVZzgx9q2w-JLKnGDMZ3If8sxXXk4O4w/viewform"
@@ -45,7 +45,7 @@
       </div>
     </section>
     <section class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 body-font overflow-hidden">
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container lg:px-5 py-10 lg:py-24 lg:mx-auto">
       <div class="flex flex-wrap items-center justify-between mx-auto">
         <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 bg-white p-8 rounded-lg shadow-lg">
           <h2 class="text-sm title-font text-indigo-600 tracking-widest uppercase mb-1">More Than Just Vending Machines</h2>
@@ -77,8 +77,8 @@
       </div>
     </div>
   </section>
-    <section class="py-16 text-center">
-      <h2 class="text-4xl font-bold mb-8 text-indigo-600">Visualize Your Success</h2>
+    <section class="py-5 lg:py-16 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-indigo-600">Visualize Your Success</h2>
       <div class="flex flex-wrap justify-center gap-6">
         <NuxtImg 
           v-for="(image, index) in images" 
@@ -91,8 +91,8 @@
       </div>
     </section>
 
-    <section class="pb-16 bg-gradient-to-r from-blue-300 to-teal-100 text-center">
-      <h2 class="text-4xl font-bold mb-4 text-indigo-600">We're Here to Support You.</h2>
+    <section class="pb-16 px-2 lg:px-0 bg-gradient-to-r from-blue-300 to-teal-100 text-center">
+      <h2 class=" text-3xl lg:text-4xl font-bold mb-4 text-indigo-600">We're Here to Support You.</h2>
       <p class="text-lg ">Our dedicated team will guide you every step of the way, ensuring your success as a distributor.</p>
       <p class="text-lg mb-6">Come and join to our Facebook Group Chat to discuss your needs and get support as a distributor in no time.</p>
       <a

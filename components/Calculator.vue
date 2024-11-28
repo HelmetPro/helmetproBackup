@@ -1,19 +1,19 @@
 <template>
   <section ref="sectionRef" class="flex flex-wrap  lg:gap-8 lg:p-8 bg-gradient-to-r from-blue-300 to-teal-100">
     <!-- Form Section with Results Inside -->
-    <div class="w-full lg:w-2/3 bg-white p-4 lg:p-6 shadow-2xl  rounded-xl">
+    <div class="w-full lg:w-2/3 bg-white  lg:p-6 shadow-2xl  rounded-xl">
       
       <!-- 1st Row: Header -->
       <div class="mb-6 text-center items-center">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl  font-extrabold text-indigo-600 mb-4 sm:mb-6">Discover Your Profit Potential with the HelmetPro Revenue & Cost Calculator!</h2>
+        <h2 class="py-5 lg:py-4 text-2xl sm:text-4xl lg:text-5xl  font-extrabold text-indigo-600 mb-4 sm:mb-6">Discover Your Profit Potential with the HelmetPro Revenue & Cost Calculator!</h2>
 
-        <p class="text-gray-600 mb-6 leading-relaxed">
+        <p class="text-gray-600 mb-6 px-5 leading-relaxed">
           Understand your revenue potential and manage costs effectively with the HelmetPro calculator. See how each wash contributes to your bottom line and maximize your profits!
         </p>
       </div>
 
       <!-- 2nd Row: 2-Column Layout -->
-      <div class="flex flex-wrap lg:flex-nowrap lg:gap-6">
+      <div class="flex flex-wrap lg:flex-nowrap lg:gap-6 p-2">
         <!-- Left Column: Form Inputs -->
         <div class="w-full lg:w-1/2">
           <div class="mb-6">

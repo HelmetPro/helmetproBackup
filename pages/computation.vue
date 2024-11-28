@@ -1,10 +1,8 @@
 <template>
   <div>
-
     <Computation />
     <Calculator />
     <Facts />
-
   </div>
 </template>
 

@@ -1,25 +1,40 @@
 <template>
   
   <div class="bg-gradient-to-r from-blue-300 to-teal-100">
-
-
     <!-- Section 1: Introduction -->
     <section class="text-gray-600 body-font">
-      <div class="container px-5 pt-20 mx-auto">
+      <div class="container lg:px-5 lg:pt-20 mx-auto">
         <div class="lg:hidden block container px-5 p-5 mx-auto bg-white  flex-col items-center">
           <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6 text-center">Potential Income Computation</h1>
           <div class="flex flex-col items-center">
             <NuxtImg 
               alt="Helmet Cleaning Vending Machine" 
-              class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
+              class="h-auto w-auto object-cover rounded-lg shadow-lg my-5" 
               src="https://utfs.io/f/txXKmXW6aEb8txXfl8W6aEb84pkeofOrBZgyztcT50XqICmH" 
               loading="lazy"
             />
             <p class="leading-relaxed text-base text-center ">
               With our HelmetPro vending machines, you can tap into a lucrative market that is rapidly growing and evolving. These innovative machines not only provide a convenient solution for helmet cleaning but also present an exciting opportunity for entrepreneurs and business owners looking to diversify their income streams.
             </p>
+            <NuxtLink 
+              href="/contactUs" 
+              class="text-orange-600 hover:text-orange-800  font-medium flex items-center text-md mt-6  lg:mt-0">
+              Contact us today for a free consultation!
+              <svg 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  stroke-width="2" 
+                  class="w-5 h-5 ml-2" 
+                  viewBox="0 0 24 24"
+              >
+                  <path d="M7 17l10-10M17 17V7h-10" />
+              </svg>
+          </NuxtLink>
 
           </div>
+
         </div>
 
         <div class="hidden lg:flex container  rounded-lg shadow-2xl mx-auto bg-white">
@@ -30,25 +45,46 @@
             loading="lazy"
           />
           <div class="flex-1 p-5">
-            <h1 class="text-5xl font-extrabold text-indigo-600 mb-6 px-10 ">Potential Income Computation</h1>
+            <h1 class="text-5xl font-extrabold text-indigo-600 mb-2 px-10 ">Potential Income Computation</h1>
+            <NuxtLink 
+              href="/contactUs" 
+              class="text-orange-600 hover:text-orange-800 text-2xl font-medium flex items-center  px-10 mb-6  lg:mt-0">
+              Contact us today for a free consultation!
+              <svg 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  stroke-width="2" 
+                  class="w-5 h-5 ml-2" 
+                  viewBox="0 0 24 24"
+              >
+                  <path d="M7 17l10-10M17 17V7h-10" />
+              </svg>
+          </NuxtLink>
             <p class="leading-10 text-base mx-auto px-10">
               With our HelmetPro vending machines, you can tap into a lucrative market that is rapidly growing and evolving. These innovative machines not only provide a convenient solution for helmet cleaning but also present an exciting opportunity for entrepreneurs and business owners looking to diversify their income streams.
 
               Here’s a comprehensive breakdown of potential earnings based on various utilization assumptions. By analyzing different scenarios—such as operating hours, customer demand, and pricing strategies—you can gain valuable insights into how our vending machines can maximize your profitability. 
             </p>
+
           </div>
+
+          
         </div>
+
+        
       </div>
     </section>
 
     <!-- Section 2: Income Breakdown Cards -->
-    <section class="text-gray-700 body-font py-20">
-      <div class="container mx-auto px-5">
+    <section class="text-gray-700 body-font py-10 lg:py-20">
+      <div class="container mx-auto lg:px-5">
         <!-- Grid Layout -->
-        <div class="grid gap-12 grid-cols-1 md:grid-cols-3">
+        <div class="grid gap-5 lg:gap-12 grid-cols-1 md:grid-cols-3">
           <!-- Assumption 1 -->
           <div
-            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+            class="bg-white shadow-lg rounded-lg p-2 lg:p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <!-- Heading -->
             <div class="mb-4 border-b-2 border-indigo-600 pb-2">
@@ -83,7 +119,7 @@
 
           <!-- Assumption 2 -->
           <div
-            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+            class="bg-white shadow-lg rounded-lg p-2 lg:p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <!-- Heading -->
             <div class="mb-4 border-b-2 border-indigo-600 pb-2">
@@ -118,7 +154,7 @@
 
           <!-- Assumption 3 -->
           <div
-            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+            class="bg-white shadow-lg rounded-lg p-2 lg:p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <!-- Heading -->
             <div class="mb-4 border-b-2 border-indigo-600 pb-2">
