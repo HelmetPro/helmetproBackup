@@ -1,7 +1,7 @@
 <template>
-  <section ref="sectionRef" class="flex flex-wrap  lg:gap-8 lg:p-8 bg-gradient-to-r from-blue-300 to-teal-100">
+  <section ref="sectionRef" class="flex flex-wrap lg:gap-8  bg-gradient-to-r from-blue-300 to-teal-100">
     <!-- Form Section with Results Inside -->
-    <div class="w-full lg:w-2/3 bg-white  lg:p-6 shadow-2xl  rounded-xl">
+    <div class="w-full  container mx-auto bg-white  lg:p-6 shadow-2xl  rounded-xl">
       
       <!-- 1st Row: Header -->
       <div class="mb-6 text-center items-center">
