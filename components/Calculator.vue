@@ -15,10 +15,11 @@
       <!-- 2nd Row: 2-Column Layout -->
       <div class="flex flex-wrap lg:flex-nowrap lg:gap-6 p-2">
         <!-- Left Column: Form Inputs -->
-        <div class="w-full lg:w-1/2">
-          <div class="mb-6">
-            <label class="block text-2xl font-semibold mb-2">Currency</label>
-            <select v-model="formData.currency" class="w-full lg:p-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <div class="w-full lg:w-1/2 space-y-8">
+          <!-- Currency Selection -->
+          <div>
+            <label class="block text-xl lg:text-2xl font-semibold mb-2">Currency</label>
+            <select v-model="formData.currency" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option value="USD">$ - USD</option>
               <option value="EUR">€ - EUR</option>
               <option value="PHP">₱ - PHP</option>
@@ -26,71 +27,100 @@
             <p class="text-sm text-gray-500 mt-2">Select the currency to display in calculations</p>
           </div>
 
-          <div v-for="field in fields" :key="field.label" class="mb-6">
-            <label :for="field.name" class="block text-sm lg:text-2xl font-semibold mb-2">{{ field.label }}</label>
+          <!-- Dynamic Form Fields -->
+          <div v-for="field in fields" :key="field.label" class="space-y-1">
+            <label :for="field.name" class="block text-lg lg:text-xl font-semibold">{{ field.label }}</label>
             <div class="relative">
-              <span v-if="field.name !== 'utilizationRate'" class="absolute  left-1 top-1/2 transform -translate-y-1/2 text-2xl font-semibold">{{ currencySymbol }}</span>
+              <!-- Prefix Symbol -->
+              <span v-if="field.name !== 'utilizationRate'" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">{{ currencySymbol }}</span>
+              <!-- Input Field -->
               <input
                 :id="field.name"
                 :type="field.type"
                 v-model="formData[field.name]"
-                class="w-full pl-10 text-2xl font-semibold lg:p-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500"
+                class="w-full pl-10 text-lg lg:text-xl px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 :placeholder="field.placeholder"
               />
             </div>
-            <p class="text-sm text-gray-500 mt-2">{{ field.helpText }}</p>
+            <p class="text-sm text-gray-500">{{ field.helpText }}</p>
           </div>
         </div>
 
         <!-- Right Column: Results Section -->
-        <div class="w-full lg:w-1/2 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-4 lg:p-6 rounded-xl shadow-2xl">
-          <h3 class="text-xl font-semibold">Daily Revenue</h3>
-          <div class="flex items-center space-x-3 mb-6">
-            <span>{{ currencySymbol }}</span>
-            <p ref="dailyRevenue" class="text-3xl font-bold">{{ formattedResults.dailyRevenue }}</p>
+        <div class="w-full lg:w-1/2 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-6 lg:p-8 rounded-xl shadow-2xl space-y-8">
+          <h2 class="text-3xl font-extrabold text-center mb-6">Revenue & Profit Summary</h2>
+
+          <div class="space-y-6">
+            <!-- Daily Revenue -->
+            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+              <h3 class="text-lg font-medium">Daily Revenue</h3>
+              <div class="flex items-center space-x-2">
+                <span class="text-2xl">{{ currencySymbol }}</span>
+                <p ref="dailyRevenue" class="text-3xl font-bold">{{ formattedResults.dailyRevenue }}</p>
+              </div>
+            </div>
+
+            <!-- Monthly Revenue -->
+            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+              <h3 class="text-lg font-medium">Monthly Revenue</h3>
+              <div class="flex items-center space-x-2">
+                <span class="text-2xl">{{ currencySymbol }}</span>
+                <p ref="monthlyRevenue" class="text-3xl font-bold">{{ formattedResults.monthlyRevenue }}</p>
+              </div>
+            </div>
+
+            <!-- Monthly Cost -->
+            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+              <h3 class="text-lg font-medium">Monthly Cost</h3>
+              <div class="flex items-center space-x-2">
+                <span class="text-2xl">{{ currencySymbol }}</span>
+                <p ref="monthlyCost" class="text-3xl font-bold">{{ formattedResults.monthlyCost }}</p>
+              </div>
+            </div>
+
+            <!-- Gross Profit -->
+            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+              <h3 class="text-lg font-medium">Gross Profit</h3>
+              <div class="flex items-center space-x-2">
+                <span class="text-2xl">{{ currencySymbol }}</span>
+                <p ref="grossProfit" class="text-4xl font-extrabold text-green-400">{{ formattedResults.grossProfit }}</p>
+              </div>
+            </div>
+
+            <!-- Profit Margin -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-lg font-medium">Profit Margin</h3>
+              <div class="flex items-center space-x-2">
+                <span class="text-2xl">{{ currencySymbol }}</span>
+                <p ref="profitMargin" class="text-3xl font-bold text-yellow-400">{{ formattedResults.profitMargin }}</p>
+              </div>
+            </div>
           </div>
 
-          <h3 class="text-xl font-semibold mb-4">Monthly Revenue</h3>
-          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
-            <span>{{ currencySymbol }}</span>
-            <p ref="monthlyRevenue" class="text-3xl font-bold">{{ formattedResults.monthlyRevenue }}</p>
+          <div class="space-y-4 text-center">
+            <h3 class="text-2xl font-bold">Maximize Your Profits!</h3>
+            <p class="text-sm text-white/80">
+              Optimize costs and increase revenue with HelmetPro. Discover new ways to boost your business and achieve success.
+            </p>
+
+            <!-- Learn More Button -->
+            <button class="w-full py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
+            </button>
           </div>
-
-          <h3 class="text-xl font-semibold mb-4">Monthly Cost</h3>
-          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
-            <span>{{ currencySymbol }}</span>
-            <p ref="monthlyCost" class="text-3xl font-bold">{{ formattedResults.monthlyCost }}</p>
-          </div>
-
-          <h3 class="text-2xl lg:2xl font-semibold mb-4">Gross Profit</h3>
-          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
-            <span class="text-4xl">{{ currencySymbol }}</span>
-            <p ref="grossProfit" class="text-5xl font-extrabold">{{ formattedResults.grossProfit }}</p>
-          </div>
-
-          <h3 class="text-xl font-semibold mb-4">Profit Margin</h3>
-          <div class="flex items-center space-x-3 mb-10 lg:mb-6">
-            <span>{{ currencySymbol }}</span>
-            <p ref="profitMargin" class="text-3xl font-bold">{{ formattedResults.profitMargin }}</p>
-          </div>
-
-          <h2 class="text-4xl font-bold text-white mb-4">Maximize Your Profits!</h2>
-          <p class="text-white mb-6">
-            Optimize your costs and increase your revenue with HelmetPro. Discover more ways to boost your business.
-          </p>
-
-          <!-- Learn More Button -->
-          <button class="w-full py-3 mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn More
-            </a>
-          </button>
         </div>
+
       </div>
+
+      <!-- Mobile View -->
+
+      
     </div>
   </section>
 </template>
