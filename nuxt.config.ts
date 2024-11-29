@@ -126,9 +126,6 @@ export default defineNuxtConfig({
 
     ]
   },
-  
-
- 
   gtag: {
     tags: [
       {
@@ -191,26 +188,22 @@ export default defineNuxtConfig({
               {
                 src: 'https://static.elfsight.com/platform/platform.js',
                 async: true
-              }
-              // {
-              //   hid: 'tawk-to',
-              //   innerHTML: `
-              //     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              //     (function(){
-              //       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              //       s1.async=true;
-              //       s1.src='https://embed.tawk.to/67243b532480f5b4f5971b2a/1ibioffge';
-              //       s1.charset='UTF-8';
-              //       s1.setAttribute('crossorigin','*');
-              //       s0.parentNode.insertBefore(s1,s0);
-              //     })();
-              //   `,
-              //   type: 'text/javascript',
-              // }
+              },
+
+              {
+                src: 'https://www.googletagmanager.com/gtag/js?id=AW-16766436812',
+                async: true,
+              },
+              {
+                type: 'application/javascript',
+                children: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'AW-16766436812');
+                `,
+              },
             ],
-            // __dangerouslyDisableSanitizersByTagID: {
-            //   'tawk-to': ['innerHTML']
-            // }
     }
   },
 
